@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.dspace</groupId>
+    <artifactId>dspace-api-lang</artifactId>
+    <name>DSpace I18N :: Language Packs</name>
+    <description>
+      DSpace Language Packs to support multiple languages.
+    </description>
+    <version>4.2.3-SNAPSHOT</version>
+
+    <organization>
+        <name>DuraSpace</name>
+        <url>http://www.dspace.org</url>
+    </organization>
+
+    <!-- brings the sonatype snapshot repository and signing requirement on board -->
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>**/*.properties.UTF-8</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.3.2</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--
+      The Subversion repository location is used by Continuum to update against
+      when changes have occurred.  This spawns a new build cycle and releases
+      snapshots into the snapshot repository below.
+    -->
+    <scm>
+        <connection>scm:git:git@github.com:DSpace/dspace-api-lang.git</connection>
+        <developerConnection>scm:git:git@github.com:DSpace/dspace-api-lang.git</developerConnection>
+        <url>git@github.com:DSpace/dspace-api-lang.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+   <profiles>
+      <profile>
+         <id>native2ascii</id>
+         <activation>
+            <activeByDefault>false</activeByDefault>
+         </activation>
+         <build>
+            <plugins>
+               <plugin>
+                  <artifactId>maven-antrun-plugin</artifactId>
+                  <version>1.7</version>
+                  <configuration>
+                     <target>
+                        <mkdir dir="target/classes" />
+                        <native2ascii encoding="UTF8" src="${basedir}/src/main/native2ascii" dest="${basedir}/src/main/resources" includes="**/*.properties.UTF-8" ext="" />
+                     </target>
+                  </configuration>
+                  <executions>
+                     <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                           <goal>run</goal>
+                        </goals>
+                     </execution>
+                  </executions>
+                  <dependencies>
+                     <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-nodeps</artifactId>
+                        <version>1.8.1</version>
+                     </dependency>
+                     <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant</artifactId>
+                        <version>1.8.2</version>
+                     </dependency>
+                  </dependencies>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+   </profiles>
+
+</project>
