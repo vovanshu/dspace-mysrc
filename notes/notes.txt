@@ -1,0 +1,45 @@
+/dspace-4.0-src-release/dspace-api/src/main/java/org/dspace/app/statistics/LogAnalyser.java
+          if (type != null)
+        {
+            typeQuery = "SELECT item_id " +
+                        "FROM metadatavalue " +
+                        "WHERE text_value LIKE '%" + type + "%' " +
+                        "AND metadata_field_id = (" +
+                        " SELECT metadata_field_id " +
+                        " FROM metadatafieldregistry " +
+                        " WHERE element = 'type' " +
+                        " AND qualifier IS NULL) ";
+        }
+        
+			 " AND qualifier IS NULL LIMIT 1) ";	#1169
+
+
+select count(*) from metadatavalue where metadata_field_id = 28 and text_value like '%Submitted%{@mail}%' group by item_id
+select count(*) from metadatavalue where metadata_field_id = 28 and text_value like '%Approved%{@mail}%' group by item_id
+
+select count(*) from metadatavalue where
+metadata_field_id = 28
+and text_value like '%Approved%'
+
+Принятих
+
+select count(*) from metadatavalue where
+metadata_field_id = 28
+and text_value like '%Approved%'
+and text_value not like '%Approved%mba.ntbpntu@gmail.com%'
+and text_value not like '%Approved%nowember68@mail.ru%'
+and text_value not like '%Approved%galina-golovko16@bigmir.net%'
+and text_value not like '%Approved%viktoria0205@ukr.net%'
+and text_value not like '%Approved%lesja_lib@ukr.net%'
+and text_value not like '%queenchayka@mail.ru%'
+
+select count(*) from metadatavalue where
+metadata_field_id = 28
+and text_value like '%Submitted%'
+and text_value not like '%Submitted%{@mail}%'
+
+select count(*) from metadatavalue where
+metadata_field_id = 28 and text_value like '%Submitted%{@mail}%'
+
+Поданих самостоятельно 
+Поданих библиотека
