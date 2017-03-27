@@ -1,3 +1,14 @@
+
+
+psql {dbname} -U {username}
+
+  {dbname}=> insert into community2community values ('1', '10', '2');
+  {dbname}=> update community2collection set community_id = 9 where community_id = 8;
+
+
+./dspace index-discovery -b
+___
+
 /dspace-4.0-src-release/dspace-api/src/main/java/org/dspace/app/statistics/LogAnalyser.java
           if (type != null)
         {

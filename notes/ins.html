@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr" class="client-nojs">
+<head>
+<title>Встановлення DSpace на ОС Debian — Вікі-знання або навчання 2.0 в ТНТУ</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.19.3" />
+<meta name="google-site-verification" content="9lqsvKOyfpKtAEEgkLEhaAPixAteVRJ7XCdcfbi8cUc" />
+<meta name="google-site-verification" content="A-kv_4MTl3w4g1sMDqxSo7IFsMOAai_bRDBEWtHU-T8" />
+<meta name="yandex-verification" content="604c141527b6339a" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Вікі-знання або навчання 2.0 в ТНТУ (uk)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.taltek.info//api.php?action=rsd" />
+<link rel="copyright" href="/Creative_Commons_Attribution/Share-Alike" />
+<link rel="alternate" type="application/atom+xml" title="Вікі-знання або навчання 2.0 в ТНТУ — Atom-стрічка" href="/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://wiki.taltek.info//load.php?debug=false&amp;lang=uk&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 6]><link rel="stylesheet" href="/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: taltek_wiki:resourceloader:filter:minify-css:7:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+
+<script src="http://wiki.taltek.info//load.php?debug=false&amp;lang=uk&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Встановлення_DSpace_на_ОС_Debian","wgTitle":"Встановлення DSpace на ОС Debian","wgCurRevisionId":19181,"wgArticleId":4609,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Бібліотека","DSpace"],"wgBreakFrames":false,"wgPageContentLanguage":"uk","wgSeparatorTransformTable":[",	."," 	,"],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Встановлення_DSpace_на_ОС_Debian","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":
+0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"uk","language":"uk","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: taltek_wiki:resourceloader:filter:minify-js:7:945b1d9276c1ec5391e9b56b2b861d9c */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Встановлення_DSpace_на_ОС_Debian skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading"><span dir="auto">Встановлення DSpace на ОС Debian</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">Матеріал з Вікі-знання або навчання 2.0 в ТНТУ</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Перейти до: <a href="#column-one">навігація</a>, <a href="#searchInput">пошук</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="uk" dir="ltr" class="mw-content-ltr"><p>Встановлення DSpace на ОС Debian
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Зміст</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.92.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.BD.D1.8F_DSpace_1.8.1_.D0.BD.D0.B0_.D0.9E.D0.A1_Debian_6"><span class="tocnumber">1</span> <span class="toctext">Встановлення DSpace 1.8.1 на ОС Debian 6</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.D0.92.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.BD.D1.8F_.D0.9E.D0.A1_Debian_GNU.2FLinux_6_Squeeze"><span class="tocnumber">1.1</span> <span class="toctext">Встановлення ОС Debian GNU/Linux 6 Squeeze</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Sun_Java_6_JDK"><span class="tocnumber">1.2</span> <span class="toctext">Sun Java 6 JDK</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.92.D0.B5.D0.B1-.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80_Tomcat_.D1.82.D0.B0_Maven"><span class="tocnumber">1.3</span> <span class="toctext">Веб-сервер Tomcat та Maven</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Postgresql"><span class="tocnumber">1.4</span> <span class="toctext">Postgresql</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.92.D0.B5.D0.B1-.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80_Apache"><span class="tocnumber">1.5</span> <span class="toctext">Веб-сервер Apache</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#phppgadmin"><span class="tocnumber">1.6</span> <span class="toctext">phppgadmin</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#.D0.9A.D0.BE.D1.80.D0.B8.D1.81.D1.82.D1.83.D0.B2.D0.B0.D1.87_.E2.80.9Edspace.E2.80.9C"><span class="tocnumber">1.7</span> <span class="toctext">Користувач „dspace“</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#.D0.91.D0.94_.E2.80.9Edspace.E2.80.9C"><span class="tocnumber">1.8</span> <span class="toctext">БД „dspace“</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#.D0.97.D0.B2.D0.B0.D0.BD.D1.82.D0.B0.D0.B6.D0.B5.D0.BD.D0.BD.D1.8F_DSpace_1.8.1"><span class="tocnumber">1.9</span> <span class="toctext">Звантаження DSpace 1.8.1</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#.D0.9D.D0.B0.D0.BB.D0.B0.D1.88.D1.82.D1.83.D0.B2.D0.B0.D0.BD.D0.BD.D1.8F_.E2.80.9Edspace.cfg.E2.80.9C"><span class="tocnumber">1.10</span> <span class="toctext">Налаштування „dspace.cfg“</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#.D0.A2.D0.B5.D0.BA.D0.B0_.2Fdspace"><span class="tocnumber">1.11</span> <span class="toctext">Тека /dspace</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#.D0.9F.D0.BE.D0.B1.D1.83.D0.B4.D0.BE.D0.B2.D0.B0_maven-.D0.BF.D0.B0.D0.BA.D1.83.D0.BD.D0.BA.D0.B0"><span class="tocnumber">1.12</span> <span class="toctext">Побудова maven-пакунка</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#.D0.92.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.BD.D1.8F"><span class="tocnumber">1.13</span> <span class="toctext">Встановлення</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#.D0.9F.D1.96.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.BD.D1.8F_DSpace-.D1.96.D0.B2.D1.81.D1.8C.D0.BA.D0.B8.D1.85_webapps_.D0.B4.D0.BE_Tomcat"><span class="tocnumber">1.14</span> <span class="toctext">Підключення DSpace-івських webapps до Tomcat</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#.D0.94.D0.BE.D0.B7.D0.B2.D1.96.D0.BB_.D0.B4.D0.BB.D1.8F_Tomcat-.D1.83_.D0.BD.D0.B0_.D0.BF.D0.BE.D1.80.D1.82_80"><span class="tocnumber">1.15</span> <span class="toctext">Дозвіл для Tomcat-у на порт 80</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#.D0.9E.D0.B1.D0.BB.D1.96.D0.BA.D0.BE.D0.B2.D0.B8.D0.B9_.D0.B7.D0.B0.D0.BF.D0.B8.D1.81_.D0.B0.D0.B4.D0.BC.D1.96.D0.BD.D0.B0_DSpace"><span class="tocnumber">1.16</span> <span class="toctext">Обліковий запис адміна DSpace</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#.D0.9F.D1.80.D0.B0.D0.B2.D0.B0_.D0.BD.D0.B0_.D1.82.D0.B5.D0.BA.D0.B8_.E2.80.9Eupload.E2.80.9C_.D1.96_.E2.80.9Eassetstore.E2.80.9C"><span class="tocnumber">1.17</span> <span class="toctext">Права на теки „upload“ і „assetstore“</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#.D0.92.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.BD.D1.8F_.D0.B7.D0.B0.D0.B2.D0.B5.D1.80.D1.88.D0.B5.D0.BD.D0.BE"><span class="tocnumber">1.18</span> <span class="toctext">Встановлення завершено</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#.D0.9D.D0.B0.D0.BB.D0.B0.D1.88.D1.82.D1.83.D0.B2.D0.B0.D0.BD.D0.BD.D1.8F"><span class="tocnumber">2</span> <span class="toctext">Налаштування</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#.D0.94.D0.B8.D0.B2._.D1.82.D0.B0.D0.BA.D0.BE.D0.B6"><span class="tocnumber">3</span> <span class="toctext">Див. також</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#.D0.9F.D0.BE.D1.81.D0.B8.D0.BB.D0.B0.D0.BD.D0.BD.D1.8F"><span class="tocnumber">4</span> <span class="toctext">Посилання</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id=".D0.92.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.BD.D1.8F_DSpace_1.8.1_.D0.BD.D0.B0_.D0.9E.D0.A1_Debian_6"> Встановлення DSpace 1.8.1 на ОС Debian 6 </span></h1>
+<h2> <span class="mw-headline" id=".D0.92.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.BD.D1.8F_.D0.9E.D0.A1_Debian_GNU.2FLinux_6_Squeeze"> Встановлення ОС Debian GNU/Linux 6 Squeeze </span></h2>
+<p>Детальніше: <a href="/%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D0%9E%D0%A1_Debian_Linux" title="Встановлення ОС Debian Linux">Встановлення ОС Debian Linux</a>.
+</p>
+<h2> <span class="mw-headline" id="Sun_Java_6_JDK"> Sun Java 6 JDK </span></h2>
+<pre>sudo apt-get install sun-java6-jdk
+</pre>
+<p>— прийняти ліцензію
+</p><p>та вибрати саме цей варіант як основний:
+</p>
+<pre>sudo update-alternatives --config java
+</pre>
+<p>вивід:
+</p>
+<pre>There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                      Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-6-openjdk/jre/bin/java   1061      auto mode
+  1            /usr/lib/jvm/java-6-openjdk/jre/bin/java   1061      manual mode
+  2            /usr/lib/jvm/java-6-sun/jre/bin/java       63        manual mode
+
+Press enter to keep the current choice[*], or type selection number: 2
+</pre>
+<h2> <span class="mw-headline" id=".D0.92.D0.B5.D0.B1-.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80_Tomcat_.D1.82.D0.B0_Maven"> Веб-сервер Tomcat та Maven </span></h2>
+<pre>sudo apt-get install tomcat6 maven2
+</pre>
+<p>(„ant“ включено до maven2)
+</p>
+<h2> <span class="mw-headline" id="Postgresql"> Postgresql </span></h2>
+<pre>sudo apt-get install postgresql
+</pre>
+<p>Налаштування локального доступу до БД Postgresql. Редагуємо файл pg_hba.conf: 
+</p>
+<pre>sudo mc -e /etc/postgresql/9.1/main/pg_hba.conf
+</pre>
+<p>Знаходимо наступні рядки:
+</p><p>закоментовуємо —
+</p>
+<pre># Database administrative login by UNIX sockets
+# local   all         postgres                          ident
+</pre>
+<p>та додаємо —
+</p>
+<pre>local all postgres trust
+</pre>
+<p>закоментовуємо —
+</p>
+<pre># TYPE DATABASE USER CIDR-ADDRESS METHOD
+# "local" is for Unix domain socket connections only
+#local all all ident
+</pre>
+<p>та додаємо — 
+</p>
+<pre>local all all trust
+</pre>
+<p>Перезапустити Postgresql, щоб задіяти зміни:
+</p>
+<pre>sudo /etc/init.d/postgresql restart
+</pre>
+<h2> <span class="mw-headline" id=".D0.92.D0.B5.D0.B1-.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80_Apache"> Веб-сервер Apache </span></h2>
+<pre>sudo apt-get install apache2
+</pre>
+<p>Оскільки 80 буде зайнятий Tomcat-ом, переналаштовуємо Apache на 8888. 
+</p><p>Редагувати /etc/apache2/ports.conf:
+</p>
+<pre>#NameVirtualHost *:80
+#Listen 80
+NameVirtualHost *:8888
+Listen 8888
+</pre>
+<p>та /etc/apache2/sites-enabled/000-default
+</p>
+<pre>&lt;VirtualHost *:8080&gt;
+…
+</pre>
+<p>Перезапуск Apache:
+</p>
+<pre>sudo /etc/init.d/apache2 restart
+</pre>
+<h2> <span class="mw-headline" id="phppgadmin"> phppgadmin </span></h2>
+<p>Адмін-застосунок для доступу до БД Postgres 
+</p>
+<pre>sudo apt-get install phppgadmin
+</pre>
+<p>Редагуємо /etc/phppgadmin/apache.conf, щоб додати доступ з інших IP:
+</p>
+<pre>allow from 10.246.28.27/255.255.255.0&#160;::1/128
+allow from 192.168.151.246/255.255.255.0&#160;::1/128
+</pre>
+<p>(allow from 127.0.0.0/255.0.0.0&#160;::1/128 теж залишити)
+</p><p>Перезапуск веб-сервера Apache:
+</p>
+<pre>sudo /etc/init.d/apache2 restart
+</pre>
+<p>Перевіряємо доступ з вибраних IP
+</p><p><a rel="nofollow" class="external free" href="http://dspace.tntu.edu.ua:8888/phppgadmin/">http://dspace.tntu.edu.ua:8888/phppgadmin/</a>
+</p>
+<h2> <span class="mw-headline" id=".D0.9A.D0.BE.D1.80.D0.B8.D1.81.D1.82.D1.83.D0.B2.D0.B0.D1.87_.E2.80.9Edspace.E2.80.9C"> Користувач „dspace“ </span></h2>
+<pre>sudo useradd -m dspace
+</pre>
+<p>(-m також створює домашню теку)
+</p><p>Додати до „sudoers“ (<a href="/%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D0%9E%D0%A1_Debian_Linux#Sudo" title="Встановлення ОС Debian Linux">Встановлення ОС Debian Linux#Sudo</a>).
+</p><p>Надалі всі дії проводити від користувача „dspace“:
+</p>
+<pre>su dspace
+</pre>
+<h2> <span class="mw-headline" id=".D0.91.D0.94_.E2.80.9Edspace.E2.80.9C"> БД „dspace“ </span></h2>
+<p>Створення користувача „dspace“ (користувач БД)
+</p>
+<pre>sudo createuser -U postgres -d -A -P dspace
+</pre>
+<p>ввести пароль 2 рази і „yes“
+</p><p>Створення чистої БД „dspace“ для користувача „dspace“:
+</p>
+<pre>sudo createdb -U dspace -E UNICODE dspace
+</pre>
+<h2> <span class="mw-headline" id=".D0.97.D0.B2.D0.B0.D0.BD.D1.82.D0.B0.D0.B6.D0.B5.D0.BD.D0.BD.D1.8F_DSpace_1.8.1"> Звантаження DSpace 1.8.1 </span></h2>
+<p>Від користувача „dspace“
+</p>
+<pre>su dspace
+</pre>
+<p>створити теку
+</p>
+<pre>mkdir source;cd source
+</pre>
+<p>та звантажити джерельні тексти
+</p>
+<pre>wget <a rel="nofollow" class="external free" href="http://sourceforge.net/projects/dspace/files/DSpace%20Stable/1.8.1/dspace-1.8.1-src-release.tar.bz2/download">http://sourceforge.net/projects/dspace/files/DSpace%20Stable/1.8.1/dspace-1.8.1-src-release.tar.bz2/download</a> -O dspace-1.8.1-src-release.tar.bz2
+</pre>
+<p>й розпакувати
+</p>
+<pre>tar -xvjf dspace-1.8.1-src-release.tar.bz2
+</pre>
+<h2> <span class="mw-headline" id=".D0.9D.D0.B0.D0.BB.D0.B0.D1.88.D1.82.D1.83.D0.B2.D0.B0.D0.BD.D0.BD.D1.8F_.E2.80.9Edspace.cfg.E2.80.9C"> Налаштування „dspace.cfg“ </span></h2>
+<p>Мінімальне початкове налаштування.
+</p>
+<pre>cd dspace-1.8.1-src-release/dspace/config/
+mc -e dspace.cfg
+</pre>
+<p>Наведені лише зміни (дещо має бути закоментовано):
+</p>
+<pre>dspace.hostname = elartu.tntu.edu.ua
+</pre>
+<pre>dspace.baseUrl = <a rel="nofollow" class="external free" href="http://elartu.tntu.edu.ua">http://elartu.tntu.edu.ua</a>
+
+dspace.name = ELARTU
+
+#db.name = ${default.db.name}
+db.name = postgres
+
+#db.url = ${default.db.url} 
+db.url = jdbc:postgresql://localhost:5432/dspace
+
+#db.driver = ${default.db.driver}
+db.driver = org.postgresql.Driver
+
+#db.username = ${default.db.username}
+#db.password = ${default.db.password}
+db.username = dspace
+db.password = abrakadabra
+
+mail.server = smtp.tu.edu.te.ua
+mail.from.address = serhij dubyk@ts tu.edu.ua
+feedback.recipient = serhij dubyk@ts tu.edu.ua
+mail.admin = serhij dubyk@ts tu.edu.ua
+alert.recipient = serhij dubyk@ts tu.edu.ua
+registration.notify = serhij dubyk@ts tu.edu.ua
+mail.charset = UTF8
+</pre>
+<h2> <span class="mw-headline" id=".D0.A2.D0.B5.D0.BA.D0.B0_.2Fdspace"> Тека /dspace </span></h2>
+<pre>sudo mkdir /dspace
+sudo chown dspace /dspace
+</pre>
+<h2> <span class="mw-headline" id=".D0.9F.D0.BE.D0.B1.D1.83.D0.B4.D0.BE.D0.B2.D0.B0_maven-.D0.BF.D0.B0.D0.BA.D1.83.D0.BD.D0.BA.D0.B0"> Побудова maven-пакунка </span></h2>
+<pre>cd /home/dspace/source/dspace-1.8.1-src-release/dspace
+mvn package
+</pre>
+<p>При цьому звантажуються файли *.jar та *.pom, а у виводі можна побачити щось на кшталт наступного:
+</p>
+<pre>… 
+Downloading: <a rel="nofollow" class="external free" href="http://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar">http://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar</a>
+Downloading: <a rel="nofollow" class="external free" href="http://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.0/maven-filtering-1.0.jar">http://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.0/maven-filtering-1.0.jar</a>
+Downloading: <a rel="nofollow" class="external free" href="http://repo1.maven.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0-alpha-2/maven-repository-builder-1.0-alpha-2.jar">http://repo1.maven.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0-alpha-2/maven-repository-builder-1.0-alpha-2.jar</a>
+[INFO] [assembly:directory-single {execution: default}]
+[INFO] Reading assembly descriptor: src/assemble/assembly.xml
+[WARNING] Cannot include project artifact: org.dspace:dspace:pom:1.8.1; it doesn't have an associated file or directory.
+[WARNING] The following patterns were never triggered in this artifact exclusion filter:
+[WARNING] NOTE: Currently, inclusion of module dependencies may produce unpredictable results if a version conflict occurs.
+[INFO] Copying files to /home/dspace/source/dspace-1.8.1-src-release/dspace/target/dspace-1.8.1-build
+[INFO] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] ------------------------------------------------------------------------
+[INFO] DSpace Addon Modules .................................. SUCCESS [1:49.420s]
+[INFO] DSpace XML-UI (Manakin)&#160;:: Web Application ............ SUCCESS [3:01.210s]
+[INFO] DSpace LNI&#160;:: Web Application ......................... SUCCESS [12.231s]
+[INFO] DSpace OAI&#160;:: Web Application ......................... SUCCESS [6.012s]
+[INFO] DSpace JSP-UI&#160;:: Web Application ...................... SUCCESS [13.066s]
+[INFO] DSpace SWORD&#160;:: Web Application ....................... SUCCESS [3.177s]
+[INFO] DSpace SWORDv2&#160;:: Web Application ..................... SUCCESS [34.394s]
+[INFO] DSpace SOLR&#160;:: Web Application ........................ SUCCESS [18.529s]
+[INFO] DSpace Assembly and Configuration ..................... SUCCESS [56.354s]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7 minutes 15 seconds
+[INFO] Finished at: Fri Feb 17 14:02:02 EET 2012
+[INFO] Final Memory: 61M/205M
+[INFO] ------------------------------------------------------------------------
+</pre>
+<h2> <span class="mw-headline" id=".D0.92.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.BD.D1.8F"> Встановлення </span></h2>
+<pre>cd /home/dspace/source/dspace-1.8.1-src-release/dspace/target/dspace-1.8.1-build
+<b>ant fresh_install</b>
+</pre>
+<p>Частина виводу:
+</p>
+<pre>    [echo] ====================================================================
+    [echo]  The DSpace code has been installed, and the database initialized.
+    [echo] 
+    [echo]  To complete installation, you should do the following:
+    [echo] 
+    [echo]  * Setup your Web servlet container (e.g. Tomcat) to look for your
+    [echo]    DSpace web applications in: /dspace/webapps/
+    [echo] 
+    [echo]    OR, copy any web applications from /dspace/webapps/ to
+    [echo]    the appropriate place for your servlet container.
+    [echo]    (e.g. '$CATALINA_HOME/webapps' for Tomcat)
+    [echo] 
+    [echo]  * Make an initial administrator account (an e-person) in DSpace:
+    [echo] 
+    [echo]    /dspace/bin/dspace create-administrator
+    [echo] 
+    [echo]  * Start up your servlet container (Tomcat etc.)
+    [echo] 
+    [echo]  You should then be able to access your DSpace's 'home page':
+    [echo] 
+    [echo]    <a rel="nofollow" class="external free" href="http://elartu.tntu.edu.ua/xmlui">http://elartu.tntu.edu.ua/xmlui</a>
+    [echo] 
+    [echo]  You should also be able to access the administrator UI:
+    [echo] 
+    [echo]    <a rel="nofollow" class="external free" href="http://elartu.tntu.edu.ua/xmlui/dspace-admin">http://elartu.tntu.edu.ua/xmlui/dspace-admin</a>
+    [echo] ====================================================================
+    [echo]         
+
+BUILD SUCCESSFUL
+Total time: 43 seconds
+</pre>
+<h2> <span class="mw-headline" id=".D0.9F.D1.96.D0.B4.D0.BA.D0.BB.D1.8E.D1.87.D0.B5.D0.BD.D0.BD.D1.8F_DSpace-.D1.96.D0.B2.D1.81.D1.8C.D0.BA.D0.B8.D1.85_webapps_.D0.B4.D0.BE_Tomcat"> Підключення DSpace-івських webapps до Tomcat </span></h2>
+<p>Найпростіший спосіб, що рекомендують, це зкопіювати:
+</p>
+<pre>cp -R /dspace/webapps/* /var/lib/tomcat6/webapps/
+</pre>
+<p>Однак було вибрано інший спосіб через редагування
+</p>
+<pre>sudo mc -e /var/lib/tomcat6/conf/server.xml
+</pre>
+<p>Зокрема необхідно у розділ „&lt;Service name="Catalina"&gt;“ додати
+</p>
+<pre>&lt;Connector port="80".
+           maxThreads="150" minSpareThreads="25" maxSpareThreads="75"
+           enableLookups="false" redirectPort="8443" acceptCount="100"
+           connectionTimeout="20000" disableUploadTimeout="true"
+</pre>
+<p>змінити localhost на elartu.tntu.edu.ua
+</p>
+<pre>&lt;Engine name="Catalina" defaultHost="elartu.tntu.edu.ua"&gt;
+</pre>
+<pre>&lt;Host name="elartu.tntu.edu.ua"  appBase="webapps"
+      unpackWARs="true" autoDeploy="true"
+      xmlValidation="false" xmlNamespaceAware="false"&gt;
+</pre>
+<p>та перед закриваючою ознакою „&lt;/Host&gt;“ додати наступне
+</p>
+<pre>&lt;Context path="/xmlui" docBase="/dspace/webapps/xmlui" allowLinking="true"/&gt;
+&lt;Context path="/sword" docBase="/dspace/webapps/sword" allowLinking="true"/&gt;
+&lt;Context path="/oai" docBase="/dspace/webapps/oai" allowLinking="true"/&gt;
+&lt;Context path="" docBase="/dspace/webapps/jspui" allowLinking="true"/&gt;
+&lt;Context path="/lni" docBase="/dspace/webapps/lni" allowLinking="true"/&gt;
+&lt;Context path="/solr" docBase="/dspace/webapps/solr" allowLinking="true"/&gt;
+</pre>
+<p>Перезапуск Tomcat
+</p>
+<pre>sudo /etc/init.d/tomcat6 restart
+</pre>
+<h2> <span class="mw-headline" id=".D0.94.D0.BE.D0.B7.D0.B2.D1.96.D0.BB_.D0.B4.D0.BB.D1.8F_Tomcat-.D1.83_.D0.BD.D0.B0_.D0.BF.D0.BE.D1.80.D1.82_80"> Дозвіл для Tomcat-у на порт 80 </span></h2>
+<p>Система не пускає tomcat на привілейований порт (80), для цього редагуємо
+</p>
+<pre>sudo mc -e /etc/default/tomcat6
+</pre>
+<p>і включаємо AUTHBIND
+</p>
+<pre># If you run Tomcat on port numbers that are all higher than 1023, then you
+# do not need authbind.  It is used for binding Tomcat to lower port numbers.
+# NOTE: authbind works only with IPv4.  Do not enable it when using IPv6.
+# (yes/no, default: no)
+AUTHBIND=yes
+</pre>
+<h2> <span class="mw-headline" id=".D0.9E.D0.B1.D0.BB.D1.96.D0.BA.D0.BE.D0.B2.D0.B8.D0.B9_.D0.B7.D0.B0.D0.BF.D0.B8.D1.81_.D0.B0.D0.B4.D0.BC.D1.96.D0.BD.D0.B0_DSpace"> Обліковий запис адміна DSpace </span></h2>
+<pre>/dspace/bin/dspace create-administrator
+</pre>
+<p>Вивід:
+</p>
+<pre>Creating an initial administrator account
+E-mail address: serhi jdubyk@ts tu.edu.ua
+First name: Serhij
+Last name: Dubyk
+WARNING: Password will appear on-screen.
+Password: ************
+Again to confirm: *********
+Is the above data correct? (y or n): y
+Administrator account created
+</pre>
+<h2> <span class="mw-headline" id=".D0.9F.D1.80.D0.B0.D0.B2.D0.B0_.D0.BD.D0.B0_.D1.82.D0.B5.D0.BA.D0.B8_.E2.80.9Eupload.E2.80.9C_.D1.96_.E2.80.9Eassetstore.E2.80.9C"> Права на теки „upload“ і „assetstore“ </span></h2>
+<pre>sudo chown -R tomcat6 /dspace/upload
+sudo chown -R tomcat6 /dspace/assetstore
+</pre>
+<h2> <span class="mw-headline" id=".D0.92.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BB.D0.B5.D0.BD.D0.BD.D1.8F_.D0.B7.D0.B0.D0.B2.D0.B5.D1.80.D1.88.D0.B5.D0.BD.D0.BE"> Встановлення завершено </span></h2>
+<p>УРА!!!
+</p><p>Можна перевірити із середини сервера:
+</p>
+<pre>lynx <a rel="nofollow" class="external free" href="http://localhost">http://localhost</a>
+lynx <a rel="nofollow" class="external free" href="http://localhost/xmlui">http://localhost/xmlui</a>
+</pre>
+<h1> <span class="mw-headline" id=".D0.9D.D0.B0.D0.BB.D0.B0.D1.88.D1.82.D1.83.D0.B2.D0.B0.D0.BD.D0.BD.D1.8F"> Налаштування </span></h1>
+<p>Щодо додаткових налаштувань та адаптацій див. тут: <a href="/%D0%9D%D0%B0%D0%BB%D0%B0%D1%88%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_DSpace" title="Налаштування DSpace">Налаштування DSpace</a>.
+</p>
+<h1> <span class="mw-headline" id=".D0.94.D0.B8.D0.B2._.D1.82.D0.B0.D0.BA.D0.BE.D0.B6"> Див. також </span></h1>
+<ul><li> <a href="/%D0%9D%D0%B0%D0%BB%D0%B0%D1%88%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_DSpace" title="Налаштування DSpace">Налаштування DSpace</a>
+</li><li> <a href="/%D0%9E%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace" title="Оновлення DSpace">Оновлення DSpace</a>
+</li><li> <a href="/%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D0%9E%D0%A1_Debian_Linux" title="Встановлення ОС Debian Linux">Встановлення ОС Debian Linux</a>
+</li></ul>
+<h1> <span class="mw-headline" id=".D0.9F.D0.BE.D1.81.D0.B8.D0.BB.D0.B0.D0.BD.D0.BD.D1.8F"> Посилання </span></h1>
+<ul><li> wiki.duraspace.org/ „<a rel="nofollow" class="external text" href="https://wiki.duraspace.org/display/DSDOC18/Installation#Installation-Installation">DSpace 1.8 Documentation&#160;» Installation</a>“
+</li><li> scribd.com/ „<a rel="nofollow" class="external text" href="http://www.scribd.com/doc/72991669/Dspace-Installation-on-Debian-Squeeze-6-0-3">DSpace Installation on Debian Squeeze 6.0.3</a>“
+</li><li> linuxhalwa.blogspot.com/ „<a rel="nofollow" class="external text" href="http://linuxhalwa.blogspot.com/2011/12/installing-dspace-18-on-ubuntu-1004.html">Installing Dspace 1.8 on Ubuntu 10.04</a>“
+</li><li> oracle.com/ „<a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u30-oth-JPR">Java SE Development Kit 6u30</a>“
+</li><li> lightonphiri.org/ „<a rel="nofollow" class="external text" href="http://lightonphiri.org/blog/dspace-installation-on-ubuntu-10-10">DSpace Installation on Ubuntu 10.10</a>“
+</li><li> losisin.com/ „<a rel="nofollow" class="external text" href="http://losisin.com/blog/39-blogs/71-install-dspace-on-ubuntu-server">Install Dspace on Ubuntu Server</a>“
+</li><li> thelowedown.wordpress.com/ „<a rel="nofollow" class="external text" href="http://thelowedown.wordpress.com/2010/08/17/tomcat-6-binding-to-a-privileged-port-on-debianubuntu/">Tomcat 6: Binding to a Privileged Port on Debian/Ubuntu</a>“
+</li><li> repositorioinstitucional.wikispaces.com/ „<a rel="nofollow" class="external text" href="http://repositorioinstitucional.wikispaces.com/Manual+de+Instalaci%C3%B3n+de+DSpace">Manual de Instalación de DSpace</a>“
+</li><li> es.scribd.com/ „<a rel="nofollow" class="external text" href="http://es.scribd.com/doc/48073504/Instalacion-DSpace-en-Ubuntu">Instalacion DSpace en Ubuntu</a>“
+</li><li> dspace.2283337.n4.nabble.com/ „<a rel="nofollow" class="external text" href="http://dspace.2283337.n4.nabble.com/Dspace-File-Upload-Problem-td3286609.html">Dspace: File Upload Problem</a>“
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 87/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key taltek_wiki:pcache:idhash:4609-0!*!0!!uk!*!* and timestamp 20140219120252 -->
+</div><div class="printfooter">
+Отримано з <a href="http://wiki.taltek.info//index.php?title=%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian&amp;oldid=19181">http://wiki.taltek.info//index.php?title=%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian&amp;oldid=19181</a></div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0:Categories" title="Спеціальна:Categories">Категорії</a>: <ul><li><a href="/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D1%96%D1%8F:%D0%91%D1%96%D0%B1%D0%BB%D1%96%D0%BE%D1%82%D0%B5%D0%BA%D0%B0" title="Категорія:Бібліотека">Бібліотека</a></li><li><a href="/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D1%96%D1%8F:DSpace" title="Категорія:DSpace">DSpace</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Перегляди</h5>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="/%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian" primary="1" context="subject" title="Вміст статті [c]" accesskey="c">Стаття</a></li>
+				<li id="ca-talk" class="new"><a href="/index.php?title=%D0%9E%D0%B1%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F:%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Обговорення змісту сторінки [t]" accesskey="t">Обговорення</a></li>
+				<li id="ca-viewsource"><a href="/index.php?title=%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian&amp;action=edit" primary="1" title="Ця сторінка захищена від змін. Ви можете переглянути і скопіювати її вихідний текст. [e]" accesskey="e">Перегляд</a></li>
+				<li id="ca-history"><a href="/index.php?title=%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian&amp;action=history" rel="archives" title="Журнал змін сторінки [h]" accesskey="h">Історія</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Особисті інструменти</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0:UserLogin&amp;returnto=%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F+DSpace+%D0%BD%D0%B0+%D0%9E%D0%A1+Debian" title="Тут можна зареєструватися в системі, але це не обов'язково. [o]" accesskey="o">Вхід / реєстрація</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+<a href="/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0" style="background-image: url(/skins/common/images/wiki.png);" title="Перейти на головну сторінку"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Навігація</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0" title="Перейти на головну сторінку [z]" accesskey="z">Головна сторінка</a></li>
+				<li id="n-portal"><a href="/wiki_%D0%A2%D0%9D%D0%A2%D0%A3:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB_%D1%81%D0%BF%D1%96%D0%BB%D1%8C%D0%BD%D0%BE%D1%82%D0%B8" title="Про проект, про те, що ви можете зробити, і що де знаходиться">Портал спільноти</a></li>
+				<li id="n-currentevents"><a href="/wiki_%D0%A2%D0%9D%D0%A2%D0%A3:%D0%9F%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D1%96_%D0%BF%D0%BE%D0%B4%D1%96%D1%97" title="Список поточних подій">Поточні події</a></li>
+				<li id="n-recentchanges"><a href="/%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0:RecentChanges" title="Перелік останніх змін [r]" accesskey="r">Нові редагування</a></li>
+				<li id="n-randompage"><a href="/%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0:Random" title="Переглянути випадкову сторінку [x]" accesskey="x">Випадкова стаття</a></li>
+				<li id="n-help"><a href="/%D0%94%D0%BE%D0%B2%D1%96%D0%B4%D0%BA%D0%B0:%D0%94%D0%BE%D0%B2%D1%96%D0%B4%D0%BA%D0%B0" title="Довідка з проекту">Довідка</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Пошук</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform">
+				<input type='hidden' name="title" value="Спеціальна:Search"/>
+				<input type="search" name="search" title="Шукати у Вікі-знання або навчання 2.0 в ТНТУ [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Перейти" title="Перейти до сторінки, що має точно таку назву (якщо вона існує)" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Пошук" title="Знайти сторінки, що містять зазначений текст" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Інструменти</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0:WhatLinksHere/%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian" title="Перелік усіх сторінок, які посилаються на цю сторінку [j]" accesskey="j">Посилання сюди</a></li>
+				<li id="t-recentchangeslinked"><a href="/%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0:RecentChangesLinked/%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian" title="Останні зміни на сторінках, на які посилається ця сторінка [k]" accesskey="k">Пов'язані редагування</a></li>
+				<li id="t-specialpages"><a href="/%D0%A1%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0:SpecialPages" title="Перелік спеціальних сторінок [q]" accesskey="q">Спеціальні сторінки</a></li>
+				<li><a href="/index.php?title=%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian&amp;printable=yes" rel="alternate">Версія до друку</a></li>
+				<li id="t-permalink"><a href="/index.php?title=%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_DSpace_%D0%BD%D0%B0_%D0%9E%D0%A1_Debian&amp;oldid=19181" title="Постійне посилання на цю версію сторінки">Постійне посилання</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-googleadsense">
+		<h5>Google AdSense</h5>
+		<div class='pBody'>
+<script type="text/javascript"><!--
+google_ad_client = "pub-5819981671638382";
+/* 9474910821 */
+google_ad_slot = "9653402514";
+google_ad_width = 120;
+google_ad_height = 600;
+// -->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-.D1.80.D0.B5.D0.BA.D0.BB.D0.B0.D0.BC.D0.B0">
+		<h5>реклама</h5>
+		<div class='pBody'>
+<!--check code-->		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-copyrightico">
+		<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="Creative Commons Attribution/Share-Alike" width="88" height="31" /></a>
+	</div>
+	<div id="f-poweredbyico">
+		<a href="//www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> Остання зміна цієї сторінки: 12:54, 14 червня 2013.</li>
+		<li id="viewcount">Цю сторінку переглядали 5424 рази.</li>
+		<li id="copyright">Вміст доступний згідно з <a href="/Creative_Commons_Attribution/Share-Alike" title="Creative Commons Attribution/Share-Alike">Creative Commons Attribution/Share-Alike</a>.</li>
+		<li id="privacy"><a href="/wiki_%D0%A2%D0%9D%D0%A2%D0%A3:%D0%9F%D0%BE%D0%BB%D1%96%D1%82%D0%B8%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BD%D1%84%D1%96%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%96" title="wiki ТНТУ:Політика конфіденційності">Політика конфіденційності</a></li>
+		<li id="about"><a href="/wiki_%D0%A2%D0%9D%D0%A2%D0%A3:%D0%9F%D1%80%D0%BE" title="wiki ТНТУ:Про">Про Вікі-знання або навчання 2.0 в ТНТУ</a></li>
+		<li id="disclaimer"><a href="/wiki_%D0%A2%D0%9D%D0%A2%D0%A3:%D0%92%D1%96%D0%B4%D0%BC%D0%BE%D0%B2%D0%B0_%D0%B2%D1%96%D0%B4_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%96" title="wiki ТНТУ:Відмова від відповідальності">Відмова від відповідальності</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
+}</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-19815617-1");
+pageTracker._trackPageview();
+</script><!-- Served in 0.192 secs. --></body></html>

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8" />
+<title>DSpace 1.8 &#8212; локализация интерфейса | ideafix.name</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://ideafix.name/wp-content/themes/twentyten/style.css" />
+<link rel="pingback" href="http://ideafix.name/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="ideafix.name &raquo; Лента" href="http://ideafix.name/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="ideafix.name &raquo; Лента комментариев" href="http://ideafix.name/?feed=comments-rss2" />
+<link rel="alternate" type="application/rss+xml" title="ideafix.name &raquo; Лента комментариев к &laquo;DSpace 1.8 &#8212; локализация интерфейса&raquo;" href="http://ideafix.name/?feed=rss2&#038;p=505" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/ideafix.name\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='farbtastic-css'  href='http://ideafix.name/wp-admin/css/farbtastic.min.css?ver=1.3u1' type='text/css' media='all' />
+<link rel='stylesheet' id='gglcptch-css'  href='http://ideafix.name/wp-content/plugins/google-captcha/css/gglcptch.css?ver=1.23' type='text/css' media='all' />
+<link rel='stylesheet' id='slb_core-css'  href='http://ideafix.name/wp-content/plugins/simple-lightbox/client/css/app.css?ver=2.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='codecolorer-css'  href='http://ideafix.name/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.9' type='text/css' media='screen' />
+<script type='text/javascript' src='http://ideafix.name/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/tag-cloud-canvas/jquery.tagcanvas.min.js?ver=4.5.2'></script>
+<link rel='https://api.w.org/' href='http://ideafix.name/?rest_route=/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ideafix.name/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ideafix.name/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Установка DSpace 1.8 в операционной системе Windows' href='http://ideafix.name/?p=359' />
+<link rel='next' title='Python. Лекция 11. Многопоточные вычисления.' href='http://ideafix.name/?p=535' />
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel="canonical" href="http://ideafix.name/?p=505" />
+<link rel='shortlink' href='http://ideafix.name/?p=505' />
+<link rel="alternate" type="application/json+oembed" href="http://ideafix.name/?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fideafix.name%2F%3Fp%3D505" />
+<link rel="alternate" type="text/xml+oembed" href="http://ideafix.name/?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fideafix.name%2F%3Fp%3D505&#038;format=xml" />
+</head>
+
+<body class="single single-post postid-505 single-format-standard">
+
+
+
+<!-- Anal by Google -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10591513-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Anal by Google -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter22446097 = new Ya.Metrika({id:22446097,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/22446097" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">//<![CDATA[
+var _tmr = _tmr || [];
+_tmr.push({id: "2468882",  type: "pageView", start: (new Date()).getTime()});
+(function (d, w) {
+   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+   ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+//]]></script><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2468882;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+<!-- //Rating@Mail.ru counter -->
+
+
+
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://ideafix.name/" title="ideafix.name" rel="home">ideafix.name</a>
+					</span>
+				</div>
+				<div id="site-description"></div>
+
+							</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Перейти к содержимому">Перейти к содержимому</a></div>
+								<div class="menu"><ul><li ><a href="http://ideafix.name/">Главная</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://ideafix.name/?p=359" rel="prev"><span class="meta-nav">&larr;</span> Установка DSpace 1.8 в операционной системе Windows</a></div>
+					<div class="nav-next"><a href="http://ideafix.name/?p=535" rel="next">Python. Лекция 11. Многопоточные вычисления. <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-505" class="post-505 post type-post status-publish format-standard hentry category-library tag-dspace tag-88">
+					<h1 class="entry-title">DSpace 1.8 &#8212; локализация интерфейса</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Опубликовано</span> <a href="http://ideafix.name/?p=505" title="18:25" rel="bookmark"><span class="entry-date">Июнь 3, 2012</span></a> <span class="meta-sep">автором</span> <span class="author vcard"><a class="url fn n" href="http://ideafix.name/?author=1" title="Посмотреть все записи автора IdeaFix">IdeaFix</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<h3>Локализация в общем</h3>
+<p>И так, для того. чтобы быстро и без затей перевести интерфейс xmlui и jspui на русский язык, надо сделать совсем не много. Первым делом нужно открыть файл <span style="text-decoration: underline;"><em>C:\DSpace\config\dspace.cfg</em></span>, установиь значение параметра <strong>&#171;xmlui.supported.locales&#187;</strong> и <strong>&#171;webui.supported.locales&#187;</strong> равным &#171;<strong>ru, en&#187;</strong>, а параметра &#171;<strong>default.language&#187;</strong> равным &#171;<strong>ru&#187;</strong>. Так же нужно установить значение параметра &#171;<strong>default.locale</strong>&#187; равным &#171;<strong>ru&#187;</strong>.</p>
+<p>Вот, собственно и всё казалось бы, но JSPUI после перезапуска службы TOMCAT будет радовать вкраплениями украинского языка, а XMLUI вовсе не переведётся.</p>
+<p>Для того, чтобы исправить эту несправедливость, необходимо создать файлы по адресу:</p>
+<p>&nbsp;</p>
+<div class="codecolorer-container text default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="text codecolorer">C:\RUNTIME\TOMCAT\webapps\jspui\WEB-INF\classes\Messages_ru.properties<br />
+C:\RUNTIME\TOMCAT\webapps\xmlui\i18n\messages_ru.xml</div></div>
+<p>Содержимое файлов доступно по <a title="rus" href="http://ideafix.name/wp-content/uploads/2012/06/rus.zip" target="_blank">этой ссылке</a> (ZIP, 65KB).</p>
+<p>&nbsp;</p>
+<p>После подмены файлов и перезапуска службы TOMCAT, интерфейсы переведутся чуть более качественно. Редактировать переводы можно самостоятельно. Пример файла сообщений для JSPUI доступен <a title="jspui" href="http://grepcode.com/file/repo1.maven.org/maven2/org.dspace/dspace-api-lang/1.8.0.3/Messages_ru.properties?av=f" target="_blank">тут</a>, а перевод для XMLUI более человекочитаем и исправлять огрехи в нём можно и без шаблонов.</p>
+<p>&nbsp;</p>
+<p><a href="http://ideafix.name/wp-content/uploads/2012/06/01.jpg" data-slb-active="1" data-slb-asset="752700520" data-slb-internal="0" data-slb-group="505"><img class="aligncenter size-full wp-image-519" title="0" src="http://ideafix.name/wp-content/uploads/2012/06/01.jpg" alt="" width="650" height="526" srcset="http://ideafix.name/wp-content/uploads/2012/06/01.jpg 650w, http://ideafix.name/wp-content/uploads/2012/06/01-300x242.jpg 300w" sizes="(max-width: 650px) 100vw, 650px" /></a></p>
+<p>&nbsp;</p>
+<p>При желании, DSpace, собираемый из исходников, можно локализовать на этапе сборки, подменив соответствующие файлы.</p>
+<p>&nbsp;</p>
+<hr />
+<p>Для исправления ошибок с поиском на русском, необходимо модифицировать файл <span style="text-decoration: underline;"><em>C:\RUNTIME\TOMCAT\conf\server.xml</em></span>.</p>
+<pre>В поле настройки доступа по HTTP необходимо добавить строку <strong>URIEncoding="UTF-8"</strong>.</pre>
+<h3>Особенности JSPUI</h3>
+<p>После локализации интерфейса JSPUI, от него отпадает справка. Ссылки в соответствии с новой локалью генерируются на несуществующие файлы вида</p>
+<div class="codecolorer-container html4strict default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="html4strict codecolorer">http://localhost/help/index_ru.html#login</div></div>
+<p>Решение у данной проблемы простое &#8212; в директории <span style="text-decoration: underline;"><em>C:\RUNTIME\TOMCAT\webapps\jspui\help</em></span> создать копии файлов collection-admin.html, index.html и site-admin.html с именами collection-admin_ru.html, index__ru.html и site-admin_ru.html. Сами справки конечно не переведутся, но по ссылкам в интерфейсе хотя бы что-то будет открываться.</p>
+<hr />
+<p>Для добавления русского алфавита в интерфейсе JSPUI в поле быстроо перехода необходимо модифицировать файлы <em><span style="text-decoration: underline;">C:\RUNTIME\TOMCAT\webapps\jspui\browse\full.jsp</span></em> и <em><span style="text-decoration: underline;">C:\RUNTIME\TOMCAT\webapps\jspui\browse\single.jsp</span></em></p>
+<p>В обоих файлах вслед за кодом:</p>
+<div class="codecolorer-container xml default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="xml codecolorer"><span class="sc3">&lt;%</span><br />
+<span class="sc3">&nbsp; &nbsp; &nbsp; &nbsp; for <span class="br0">&#40;</span>char c = <span class="st0">'A'</span>; c &lt;= <span class="st0">'Z'</span>; c++<span class="br0">&#41;</span></span><br />
+<span class="sc3">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc3">&lt;%= c %<span class="re2">&gt;</span></span>&quot;&gt;<span class="sc3">&lt;%= c %<span class="re2">&gt;</span><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span></div></div>
+<p>Вставить код:</p>
+<div class="codecolorer-container xml default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="xml codecolorer"><span class="sc3"><span class="re1">&lt;br</span> <span class="re2">/&gt;</span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3">&nbsp; &nbsp; &nbsp; &nbsp; for <span class="br0">&#40;</span>char c = <span class="st0">'\u0410'</span>; c &lt;= <span class="st0">'\u042F'</span>; c++<span class="br0">&#41;</span></span><br />
+<span class="sc3">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc3">&lt;%= c %<span class="re2">&gt;</span></span>&quot;&gt;<span class="sc3">&lt;%= c %<span class="re2">&gt;</span><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span></div></div>
+<p>После перезапуска службы <strong>TOMCAT</strong>, под английским алфавитом добавится русский.</p>
+<p>Для украинского алфавита я предлагаю такой код:</p>
+<div class="codecolorer-container xml default" style="overflow:auto;white-space:nowrap;width:725px;height:300px;"><div class="xml codecolorer"><span class="sc3"><span class="re1">&lt;br</span> <span class="re2">/&gt;</span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3">for <span class="br0">&#40;</span>char c = <span class="st0">'\u0410'</span>; c &lt;= <span class="st0">'\u0413'</span>; c++<span class="br0">&#41;</span></span><br />
+<span class="sc3"><span class="br0">&#123;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc3">&lt;%= c %<span class="re2">&gt;</span></span>&quot;&gt;<span class="sc3">&lt;%= c %<span class="re2">&gt;</span><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3"><span class="br0">&#125;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+<br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc1">&amp;#1168;</span>&quot;&gt;<span class="sc1">&amp;#1168;</span><span class="sc3"><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3">for <span class="br0">&#40;</span>char c = <span class="st0">'\u0414'</span>; c &lt;= <span class="st0">'\u0415'</span>; c++<span class="br0">&#41;</span></span><br />
+<span class="sc3"><span class="br0">&#123;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc3">&lt;%= c %<span class="re2">&gt;</span></span>&quot;&gt;<span class="sc3">&lt;%= c %<span class="re2">&gt;</span><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3"><span class="br0">&#125;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+<br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc1">&amp;#1028;</span>&quot;&gt;<span class="sc1">&amp;#1028;</span><span class="sc3"><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc1">&amp;#1025;</span>&quot;&gt;<span class="sc1">&amp;#1025;</span><span class="sc3"><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3">for <span class="br0">&#40;</span>char c = <span class="st0">'\u0416'</span>; c &lt;= <span class="st0">'\u0418'</span>; c++<span class="br0">&#41;</span></span><br />
+<span class="sc3"><span class="br0">&#123;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc3">&lt;%= c %<span class="re2">&gt;</span></span>&quot;&gt;<span class="sc3">&lt;%= c %<span class="re2">&gt;</span><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3"><span class="br0">&#125;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc1">&amp;#1030;</span>&quot;&gt;<span class="sc1">&amp;#1030;</span><span class="sc3"><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc1">&amp;#1031;</span>&quot;&gt;<span class="sc1">&amp;#1031;</span><span class="sc3"><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3">for <span class="br0">&#40;</span>char c = <span class="st0">'\u0419'</span>; c &lt;= <span class="st0">'\u042F'</span>; c++<span class="br0">&#41;</span></span><br />
+<span class="sc3"><span class="br0">&#123;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span><br />
+<span class="sc3"><span class="re1">&lt;a</span> <span class="re0">href</span>=<span class="st0">&quot;&lt;%= sharedLink %&gt;</span></span><span class="sc1">&amp;amp;</span>starts_with=<span class="sc3">&lt;%= c %<span class="re2">&gt;</span></span>&quot;&gt;<span class="sc3">&lt;%= c %<span class="re2">&gt;</span><span class="re1">&lt;/a<span class="re2">&gt;</span></span></span><br />
+<span class="sc3">&lt;%</span><br />
+<span class="sc3"><span class="br0">&#125;</span></span><br />
+<span class="sc3">%<span class="re2">&gt;</span></span></div></div>
+<p>Коллеги с <a href="http://irbis.gpntb.ru/read.php?53,59259,80321#msg-80321" target="_blank">форума</a> предлагали использовать непосредственно буквы/символы в коде, у меня вышло лишь с dec unicode кодами.</p>
+<p><a href="http://ideafix.name/wp-content/uploads/2012/06/ukr.jpg" data-slb-active="1" data-slb-asset="1093863861" data-slb-internal="0" data-slb-group="505"><img src="http://ideafix.name/wp-content/uploads/2012/06/ukr-300x129.jpg" alt="ukr" width="300" height="129" class="aligncenter size-medium wp-image-1529" srcset="http://ideafix.name/wp-content/uploads/2012/06/ukr-300x129.jpg 300w, http://ideafix.name/wp-content/uploads/2012/06/ukr.jpg 938w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h3>Особенности XMLUI</h3>
+<p>Процедура модификации XMLUI для получения русского алфавита в поле быстрого перехода чуть сложнее. Для реализации этой задачи потребуется модификация исходного кода сервлета и его повторная сборка. Поэтому, лучше сделать все модификации заранее.</p>
+<p>Необходимо найти директорию <span style="text-decoration: underline;"><em>[dspace-src]\dspace-xmlui\src\main\java\org\dspace\app\xmlui\aspect\</em></span> и изменить файл ConfigurableBrowse.java в директории <span style="text-decoration: underline;"><em>artifactbrowser</em></span>, файл SearchFacetFilter.java в директории <span style="text-decoration: underline;"><em>discovery</em></span>, файлы PrivateItems.java и WithdrawnItems.java в директории <span style="text-decoration: underline;"><em>administrative</em></span></p>
+<p>Правки необходимо сделать следующие:</p>
+<p>1. <b>ConfigurableBrowse.java</b></br>Отвечает за отображение алфавита в &#171;Просмотр по автору&#187;, &#171;Просмотр по  теме&#187;.</p>
+<p>Находим:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;height:300px;"><div class="java codecolorer">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">// Create a clickable list of the alphabet</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a> jumpList <span class="sy0">=</span> jump.<span class="me1">addList</span><span class="br0">&#40;</span><span class="st0">&quot;jump-list&quot;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a>.<span class="me1">TYPE_SIMPLE</span>, <span class="st0">&quot;alphabet&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+<br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">// browse params for each letter are all the query params</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">// WITHOUT the second-stage browse value, and add STARTS_WITH.</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Map<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span> letterQuery <span class="sy0">=</span> <span class="kw1">new</span> HashMap<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span><span class="br0">&#40;</span>queryParamsGET<span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a> valueKey <span class="sy0">:</span> BrowseParams.<span class="me1">FILTER_VALUE</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; letterQuery.<span class="me1">remove</span><span class="br0">&#40;</span>valueKey<span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; letterQuery.<span class="me1">put</span><span class="br0">&#40;</span>BrowseParams.<span class="me1">STARTS_WITH</span>, <span class="st0">&quot;0&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList.<span class="me1">addItemXref</span><span class="br0">&#40;</span><span class="kw1">super</span>.<span class="me1">generateURL</span><span class="br0">&#40;</span>BROWSE_URL_BASE, letterQuery<span class="br0">&#41;</span>, <span class="st0">&quot;0-9&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">char</span> c <span class="sy0">=</span> <span class="st0">'A'</span><span class="sy0">;</span> c <span class="sy0">&lt;=</span> <span class="st0">'Z'</span><span class="sy0">;</span> c<span class="sy0">++</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; letterQuery.<span class="me1">put</span><span class="br0">&#40;</span>BrowseParams.<span class="me1">STARTS_WITH</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList.<span class="me1">addItemXref</span><span class="br0">&#40;</span><span class="kw1">super</span>.<span class="me1">generateURL</span><span class="br0">&#40;</span>BROWSE_URL_BASE, letterQuery<span class="br0">&#41;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">toString</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span><br />
+<br />
+<span class="br0">&#91;</span>cc<span class="br0">&#93;</span><br />
+<br />
+И ниже добавляем<br />
+<br />
+<span class="br0">&#91;</span>cc lang<span class="sy0">=</span><span class="st0">&quot;java&quot;</span><span class="br0">&#93;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a> jumpList2 <span class="sy0">=</span> jump.<span class="me1">addList</span><span class="br0">&#40;</span><span class="st0">&quot;jump-list2&quot;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a>.<span class="me1">TYPE_SIMPLE</span>, <span class="st0">&quot;alphabet&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; jumpList2.<span class="me1">addItemXref</span><span class="br0">&#40;</span><span class="kw1">super</span>.<span class="me1">generateURL</span><span class="br0">&#40;</span>BROWSE_URL_BASE, letterQuery<span class="br0">&#41;</span>, <span class="st0">&quot;0-9&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+<br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">char</span> vv <span class="sy0">=</span> <span class="st0">'А'</span><span class="sy0">;</span> vv <span class="sy0">&lt;=</span> <span class="st0">'Я'</span><span class="sy0">;</span> vv<span class="sy0">++</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; letterQuery.<span class="me1">put</span><span class="br0">&#40;</span>BrowseParams.<span class="me1">STARTS_WITH</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>vv<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList2.<span class="me1">addItemXref</span><span class="br0">&#40;</span><span class="kw1">super</span>.<span class="me1">generateURL</span><span class="br0">&#40;</span>BROWSE_URL_BASE, letterQuery<span class="br0">&#41;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">toString</span><span class="br0">&#40;</span>vv<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></div>
+<p><b>2. Файл SearchFacetFilter.java</b><br />Отвечает за отображение алфавита в поиске.</p>
+<p>Находим:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="java codecolorer">org.<span class="me1">dspace</span>.<span class="me1">app</span>.<span class="me1">xmlui</span>.<span class="me1">wing</span>.<span class="me1">element</span>.<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a> jumpList <span class="sy0">=</span> jump.<span class="me1">addList</span><span class="br0">&#40;</span><span class="st0">&quot;jump-list&quot;</span>, org.<span class="me1">dspace</span>.<span class="me1">app</span>.<span class="me1">xmlui</span>.<span class="me1">wing</span>.<span class="me1">element</span>.<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a>.<span class="me1">TYPE_SIMPLE</span>, <span class="st0">&quot;alphabet&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></div>
+<p>И ниже добавляем:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="java codecolorer">org.<span class="me1">dspace</span>.<span class="me1">app</span>.<span class="me1">xmlui</span>.<span class="me1">wing</span>.<span class="me1">element</span>.<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a> jumpList2 <span class="sy0">=</span> jump.<span class="me1">addList</span><span class="br0">&#40;</span><span class="st0">&quot;jump-list2&quot;</span>, org.<span class="me1">dspace</span>.<span class="me1">app</span>.<span class="me1">xmlui</span>.<span class="me1">wing</span>.<span class="me1">element</span>.<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a>.<span class="me1">TYPE_SIMPLE</span>, <span class="st0">&quot;alphabet&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></div>
+<p>В этом же файле находим:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="java codecolorer">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="co1">//TODO: put this back !</span><br />
+<br />
+<span class="co1">// &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;jumpList.addItemXref(generateURL(&quot;browse&quot;, letterQuery), &quot;0-9&quot;);</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">char</span> c <span class="sy0">=</span> <span class="st0">'A'</span><span class="sy0">;</span> c <span class="sy0">&lt;=</span> <span class="st0">'Z'</span><span class="sy0">;</span> c<span class="sy0">++</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a> linkUrl <span class="sy0">=</span> basicUrl <span class="sy0">+</span> <span class="st0">&quot;&amp;&quot;</span> <span class="sy0">+</span> &nbsp;SearchFilterParam.<span class="me1">STARTS_WITH</span> <span class="sy0">+</span> &nbsp;<span class="st0">&quot;=&quot;</span> <span class="sy0">+</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span>.<span class="me1">toLowerCase</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList.<span class="me1">addItemXref</span><span class="br0">&#40;</span>linkUrl, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">toString</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></div>
+<p>Ниже добавляем:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="java codecolorer">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">char</span> vv <span class="sy0">=</span> <span class="st0">'А'</span><span class="sy0">;</span> vv <span class="sy0">&lt;=</span> <span class="st0">'Я'</span><span class="sy0">;</span> vv<span class="sy0">++</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a> linkUrl <span class="sy0">=</span> basicUrl <span class="sy0">+</span> <span class="st0">&quot;&amp;&quot;</span> <span class="sy0">+</span> &nbsp;SearchFilterParam.<span class="me1">STARTS_WITH</span> <span class="sy0">+</span> &nbsp;<span class="st0">&quot;=&quot;</span> <span class="sy0">+</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>vv<span class="br0">&#41;</span>.<span class="me1">toLowerCase</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList2.<span class="me1">addItemXref</span><span class="br0">&#40;</span>linkUrl, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">toString</span><span class="br0">&#40;</span>vv<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></div>
+<p><b>3. Файл PrivateItems.java</b><br />Отвечает за отображение алфавита в  &#171;Просмотр по названию&#187; в личных записях.</p>
+<p>Находим:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="java codecolorer">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="co1">// Create a clickable list of the alphabet</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a> jumpList <span class="sy0">=</span> jump.<span class="me1">addList</span><span class="br0">&#40;</span><span class="st0">&quot;jump-list&quot;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a>.<span class="me1">TYPE_SIMPLE</span>, <span class="st0">&quot;alphabet&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">char</span> c <span class="sy0">=</span> <span class="st0">'A'</span><span class="sy0">;</span> c <span class="sy0">&lt;=</span> <span class="st0">'Z'</span><span class="sy0">;</span> c<span class="sy0">++</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Map<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span> cQuery <span class="sy0">=</span> <span class="kw1">new</span> HashMap<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span><span class="br0">&#40;</span>queryParams<span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cQuery.<span class="me1">put</span><span class="br0">&#40;</span>BrowseParams.<span class="me1">STARTS_WITH</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList.<span class="me1">addItemXref</span><span class="br0">&#40;</span><span class="kw1">super</span>.<span class="me1">generateURL</span><span class="br0">&#40;</span>PRIVATE_URL_BASE, cQuery<span class="br0">&#41;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">toString</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></div>
+<p>Ниже добавляем:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="java codecolorer">&nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a> jumpList2 <span class="sy0">=</span> jump.<span class="me1">addList</span><span class="br0">&#40;</span><span class="st0">&quot;jump-list2&quot;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a>.<span class="me1">TYPE_SIMPLE</span>, <span class="st0">&quot;alphabet&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">char</span> vv <span class="sy0">=</span> <span class="st0">'А'</span><span class="sy0">;</span> vv <span class="sy0">&lt;=</span> <span class="st0">'Я'</span><span class="sy0">;</span> vv<span class="sy0">++</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Map<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span> cQuery <span class="sy0">=</span> <span class="kw1">new</span> HashMap<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span><span class="br0">&#40;</span>queryParams<span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cQuery.<span class="me1">put</span><span class="br0">&#40;</span>BrowseParams.<span class="me1">STARTS_WITH</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>vv<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList2.<span class="me1">addItemXref</span><span class="br0">&#40;</span><span class="kw1">super</span>.<span class="me1">generateURL</span><span class="br0">&#40;</span>PRIVATE_URL_BASE, cQuery<span class="br0">&#41;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">toString</span><span class="br0">&#40;</span>vv<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></div>
+<p><b>4. Файл WithdrawnItems.java</b><br />Отвечает за отображение алфавита в  &#171;Просмотр по названию&#187; в Отозванных записях/</p>
+<p>Находим:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="java codecolorer">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">// Create a clickable list of the alphabet</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a> jumpList <span class="sy0">=</span> jump.<span class="me1">addList</span><span class="br0">&#40;</span><span class="st0">&quot;jump-list&quot;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a>.<span class="me1">TYPE_SIMPLE</span>, <span class="st0">&quot;alphabet&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">char</span> c <span class="sy0">=</span> <span class="st0">'A'</span><span class="sy0">;</span> c <span class="sy0">&lt;=</span> <span class="st0">'Z'</span><span class="sy0">;</span> c<span class="sy0">++</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Map<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span> cQuery <span class="sy0">=</span> <span class="kw1">new</span> HashMap<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span><span class="br0">&#40;</span>queryParams<span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cQuery.<span class="me1">put</span><span class="br0">&#40;</span>BrowseParams.<span class="me1">STARTS_WITH</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList.<span class="me1">addItemXref</span><span class="br0">&#40;</span><span class="kw1">super</span>.<span class="me1">generateURL</span><span class="br0">&#40;</span>WITHDRAWN_URL_BASE, cQuery<span class="br0">&#41;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">toString</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></div>
+<p>Ниже добавляем:</p>
+<div class="codecolorer-container java default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="java codecolorer">&nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a> jumpList2 <span class="sy0">=</span> jump.<span class="me1">addList</span><span class="br0">&#40;</span><span class="st0">&quot;jump-list2&quot;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Alist+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">List</span></a>.<span class="me1">TYPE_SIMPLE</span>, <span class="st0">&quot;alphabet&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">char</span> vv <span class="sy0">=</span> <span class="st0">'А'</span><span class="sy0">;</span> vv <span class="sy0">&lt;=</span> <span class="st0">'Я'</span><span class="sy0">;</span> vv<span class="sy0">++</span><span class="br0">&#41;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#123;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Map<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span> cQuery <span class="sy0">=</span> <span class="kw1">new</span> HashMap<span class="sy0">&lt;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Astring+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">String</span></a>, String<span class="sy0">&gt;</span><span class="br0">&#40;</span>queryParams<span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cQuery.<span class="me1">put</span><span class="br0">&#40;</span>BrowseParams.<span class="me1">STARTS_WITH</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a>.<span class="me1">toString</span><span class="br0">&#40;</span>vv<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jumpList2.<span class="me1">addItemXref</span><span class="br0">&#40;</span><span class="kw1">super</span>.<span class="me1">generateURL</span><span class="br0">&#40;</span>WITHDRAWN_URL_BASE, cQuery<span class="br0">&#41;</span>, <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Acharacter+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Character</span></a><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">toString</span><span class="br0">&#40;</span>vv<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></div>
+<p>Если модификации подверглись исходные коды DSpace перед первой установкой, процесс установки не изменится. Сборку сервлета из исходных кодов можно продолжать как обычно. Если исходные коды модифицировались для обновления уже установленного сервлета, необходимо предпринять следующие действия для успешного обновления:</p>
+<ul>
+<li>остановить Apache Tomcat (или иной, используемый контейнер сервлетов) соответствующей командой, например, <u>service tomcat6 stop</u> или <u>service tomcat7 stop</u> для шестой и седьмой версии Tomcat соответственно.
+<li>перейти в директорию с исходными кодами DSpace: <u>сd [dspace-src-release]</u>
+<li>дать команду <u>mvn -U clean package</u>
+<li>перейти в директорию <u>[dspace-src-release]/dspace/target/dspace-[version]-build</u>
+<li>дать команду <u>ant update</u>
+<li>обновить сервлет XMLUI в директории webapps контейнера сервлетов.
+<li>запустить Apache Tomcat (или иной, используемый контейнер сервлетов) соответствующей командой, например, <u>service tomcat6 start</u> или <u>service tomcat7 start</u> для шестой и седьмой версии Tomcat соответственно.
+<p>Для всех действий желательно наличие прав суперпользователя/администратора независимо от ОС.</p>
+											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+						Запись опубликована в рубрике <a href="http://ideafix.name/?cat=7" rel="category">Библиотека</a> с метками <a href="http://ideafix.name/?tag=dspace" rel="tag">DSpace</a>, <a href="http://ideafix.name/?tag=%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f" rel="tag">Локализация</a>. Добавьте в закладки <a href="http://ideafix.name/?p=505" title="Постоянная ссылка: DSpace 1.8 &#8212; локализация интерфейса" rel="bookmark">постоянную ссылку</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://ideafix.name/?p=359" rel="prev"><span class="meta-nav">&larr;</span> Установка DSpace 1.8 в операционной системе Windows</a></div>
+					<div class="nav-next"><a href="http://ideafix.name/?p=535" rel="next">Python. Лекция 11. Многопоточные вычисления. <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+			<h3 id="comments-title">17 комментариев: <em>DSpace 1.8 &#8212; локализация интерфейса</em></h3>
+
+
+			<ol class="commentlist">
+					<li class="comment even thread-even depth-1" id="li-comment-27">
+		<div id="comment-27">
+			<div class="comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/3dc6619ba9a9aa19accba7f6c90e93c1?s=40&#038;d=mm&#038;r=x' srcset='http://0.gravatar.com/avatar/3dc6619ba9a9aa19accba7f6c90e93c1?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn">Anonymous</cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-27">
+				Сентябрь 27, 2012 в 14:52</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>В 1.8.2 локализация заработала только после изменения default.locale на ru в файле конфигурации dspace.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=27#respond' onclick='return addComment.moveForm( "comment-27", "27", "respond", "505" )' aria-label='Комментарий к записи Anonymous'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-30">
+		<div id="comment-30">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://ideafix.name' rel='external nofollow' class='url'>IdeaFix</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-30">
+				Сентябрь 29, 2012 в 23:57</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>10x</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=30#respond' onclick='return addComment.moveForm( "comment-30", "30", "respond", "505" )' aria-label='Комментарий к записи IdeaFix'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-102">
+		<div id="comment-102">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/ad400aea88b85ccee2e7ecd4c8ca5ac0?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/ad400aea88b85ccee2e7ecd4c8ca5ac0?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn">Павел</cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-102">
+				Август 16, 2013 в 02:39</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Могу дать ман как сделать русик на xmlui (сделан по хауту dspace) если IdeaFix разместит у себя, а то я что-то ничего такого толкового не нашел в пабликах</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=102#respond' onclick='return addComment.moveForm( "comment-102", "102", "respond", "505" )' aria-label='Комментарий к записи Павел'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-110">
+		<div id="comment-110">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://ideafix.name' rel='external nofollow' class='url'>IdeaFix</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-110">
+				Август 16, 2013 в 21:16</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>А чего там давать то? 🙂 Бери файл messages_ru.xml, да переводи. К тому же, есть и более или менее сносный официальный перевод и дюжина альтернативных.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=110#respond' onclick='return addComment.moveForm( "comment-110", "110", "respond", "505" )' aria-label='Комментарий к записи IdeaFix'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment even depth-3" id="li-comment-113">
+		<div id="comment-113">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/ad400aea88b85ccee2e7ecd4c8ca5ac0?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/ad400aea88b85ccee2e7ecd4c8ca5ac0?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn">Павел</cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-113">
+				Август 17, 2013 в 00:07</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Я не правильно выразился, мало сплю последнее время. Речь о том,что в xmlui одного перевода мало, нужна сортировка, т.е. алфавит</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=113#respond' onclick='return addComment.moveForm( "comment-113", "113", "respond", "505" )' aria-label='Комментарий к записи Павел'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-4" id="li-comment-121">
+		<div id="comment-121">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://ideafix.name' rel='external nofollow' class='url'>IdeaFix</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-121">
+				Август 17, 2013 в 11:26</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>На ирбисовском гпнтбшном форуме был вроде кусок кода, но если у Вас под руками &#8212; давайте, опубликую. Мы в подшефных архивах не спешим переходить на 3 версию и на xmlui, поэтому он у меня освещен минимально.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=121#respond' onclick='return addComment.moveForm( "comment-121", "121", "respond", "505" )' aria-label='Комментарий к записи IdeaFix'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor even depth-4" id="li-comment-122">
+		<div id="comment-122">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://ideafix.name' rel='external nofollow' class='url'>IdeaFix</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-122">
+				Август 17, 2013 в 11:31</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Предлагаю обсудить (да и окончательный вариант оформить) <a href="http://irbis.gpntb.ru/read.php?53,59259,page=10" rel="nofollow">http://irbis.gpntb.ru/read.php?53,59259,page=10</a> тут, а я уже потом у себя на сайте копию сделаю. Проходимость у гпнтб-шного форума куда больше, а учитывая узость круга потенциальных читателей, это важно.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=122#respond' onclick='return addComment.moveForm( "comment-122", "122", "respond", "505" )' aria-label='Комментарий к записи IdeaFix'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-125">
+		<div id="comment-125">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/ad400aea88b85ccee2e7ecd4c8ca5ac0?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/ad400aea88b85ccee2e7ecd4c8ca5ac0?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn">Павел</cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-125">
+				Август 18, 2013 в 16:34</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Спб. за приглашение. Я это все это видел, читал, но не регистрировался, а на тебя вышел видимо с оверов :). </p>
+<p>Перекинул туда инфу <a href="http://irbis.gpntb.ru/read.php?53,59259,page=10" rel="nofollow">http://irbis.gpntb.ru/read.php?53,59259,page=10</a></p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=125#respond' onclick='return addComment.moveForm( "comment-125", "125", "respond", "505" )' aria-label='Комментарий к записи Павел'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-2528">
+		<div id="comment-2528">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db85bffd38230ef3cefd5958d6d18866?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db85bffd38230ef3cefd5958d6d18866?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://dspace.nlu.edu.ua/' rel='external nofollow' class='url'>Владимир</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-2528">
+				Май 5, 2015 в 19:16</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Доброго времени суток. Столкнулся с небольшой проблемой. Локализация работает частично, то есть все работает на всех нужных языках, кроме общей статистики ,только английский язык отображается. Проводились различные манипуляции: от копирования файлов пропертис в различные точки до замены английского текста в дстат.мап на русский &#8212; результат один, все работает на всех языках, кроме общей статистики. Это как то лечится? Версия диспейса 1.7 насколько я понял, с уверенностью сказать не могу, ибо недавно занял должность администратора и разбирался уже с готовым, установленным всем обеспечением.<br />
+Заранее благодарю за ответ.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=2528#respond' onclick='return addComment.moveForm( "comment-2528", "2528", "respond", "505" )' aria-label='Комментарий к записи Владимир'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-2533">
+		<div id="comment-2533">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://ideafix.name' rel='external nofollow' class='url'>IdeaFix</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-2533">
+				Май 6, 2015 в 00:11</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>JSPUI или XMLUI? Для JSPUI у меня есть перевод статистики, но что Вы понимаете под общей? Это <a href="http://elar.rsvpu.ru/handle/123456789/2/statistics" rel="nofollow">http://elar.rsvpu.ru/handle/123456789/2/statistics</a> или репорты в админке? Посмледние не переводил. ибо мы их юзерам не отдаём. Больно уж они для юзеров не прозрачны.</p>
+<p>Видимо, имелось в виду это <a href="http://dspace.nlu.edu.ua/statistics" rel="nofollow">http://dspace.nlu.edu.ua/statistics</a></p>
+<p>Его можно перевести, но мы не переводили, в виду, как я уже говорил, не прозрачности.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=2533#respond' onclick='return addComment.moveForm( "comment-2533", "2533", "respond", "505" )' aria-label='Комментарий к записи IdeaFix'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment even depth-3" id="li-comment-2544">
+		<div id="comment-2544">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db85bffd38230ef3cefd5958d6d18866?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db85bffd38230ef3cefd5958d6d18866?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://dspace.nlu.edu.ua/' rel='external nofollow' class='url'>Владимир</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-2544">
+				Май 6, 2015 в 11:59</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Интерфейс JSPUI, да именно такую статистику и имел ввиду, благодарю. И, пользуясь случаем, хотел бы у вас спросить совета не по теме даного топика, а по теме статистики диспейса, если можно, разумеется, ибо на форум ирбиса не хотят пускать, а ответа не нашел.<br />
+Если вам не трудно, отпишитесь, пожалуйста, на мой имейл <a href="mailto:v0van@i.ua">v0van@i.ua</a>.<br />
+Благодарю за ответ насчет локализации и заранее благодарю за совет по статистике, если дадите.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=2544#respond' onclick='return addComment.moveForm( "comment-2544", "2544", "respond", "505" )' aria-label='Комментарий к записи Владимир'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt depth-3" id="li-comment-3901">
+		<div id="comment-3901">
+			<div class="comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/e80ecb45814ad18551fa6e0d7d7f98ac?s=40&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/e80ecb45814ad18551fa6e0d7d7f98ac?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn">tarantul</cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-3901">
+				Август 24, 2015 в 14:27</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Добрый день, вот здесь у вас <a href="http://dspace.nlu.edu.ua/statistics" rel="nofollow">http://dspace.nlu.edu.ua/statistics</a> например первая таблица переведена на русский, как это можно сделать? Если просто перевести содержимое файла dstat.map на русский, то получается абракадабра. Как вы это сделали?</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=3901#respond' onclick='return addComment.moveForm( "comment-3901", "3901", "respond", "505" )' aria-label='Комментарий к записи tarantul'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-4" id="li-comment-3904">
+		<div id="comment-3904">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://ideafix.name' rel='external nofollow' class='url'>IdeaFix</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-3904">
+				Август 25, 2015 в 00:51</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Это делается на уровне messages_ru.properties кажется. Русский или украинский туда вставлять бесполезно, там только jsp escape codes. Для конвертации я использую этот инструмент &#8212; <a href="http://r12a.github.io/apps/conversion/" rel="nofollow">http://r12a.github.io/apps/conversion/</a></p>
+<div class="codecolorer-container text default" style="overflow:auto;white-space:nowrap;width:725px;"><div class="text codecolorer">jsp.display-item.display-statistics = \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430<br />
+jsp.collection-home.display-statistics = \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430<br />
+jsp.community-home.display-statistics = \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430<br />
+<br />
+jsp.statistics.title = \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430<br />
+jsp.statistics.heading.visits = \u041F\u043E\u0441\u0435\u0449\u0435\u043D\u0438\u0439 \u0432\u0441\u0435\u0433\u043E<br />
+jsp.statistics.heading.views = \u041F\u043E\u0441\u0435\u0449\u0435\u043D\u0438\u044F<br />
+jsp.statistics.heading.filedownloads = \u0417\u0430\u0433\u0440\u0443\u0437\u043E\u043A<br />
+jsp.statistics.heading.monthlyvisits = \u041F\u043E\u0441\u0435\u0449\u0435\u043D\u0438\u0439 \u043F\u043E \u043C\u0435\u0441\u044F\u0446\u0430\u043C<br />
+jsp.statistics.heading.countryvisits = \u041F\u043E\u0441\u0435\u0449\u0435\u043D\u0438\u0439 \u043F\u043E \u0441\u0442\u0440\u0430\u043D\u0430\u043C<br />
+jsp.statistics.heading.cityvisits = \u041F\u043E\u0441\u0435\u0449\u0435\u043D\u0438\u0439 \u043F\u043E \u0433\u043E\u0440\u043E\u0434\u0430\u043C</div></div>
+<p>Как-то так. Это в messages_ru.properties у меня лежит, добавлял сам.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=3904#respond' onclick='return addComment.moveForm( "comment-3904", "3904", "respond", "505" )' aria-label='Комментарий к записи IdeaFix'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-5" id="li-comment-3906">
+		<div id="comment-3906">
+			<div class="comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/e80ecb45814ad18551fa6e0d7d7f98ac?s=40&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/e80ecb45814ad18551fa6e0d7d7f98ac?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn">tarantul</cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-3906">
+				Август 25, 2015 в 14:13</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Вы не обратили внимание на ссылку возможно, вы описали как перевести эту статистику <a href="http://elar.rsvpu.ru/handle/123456789/2/statistics" rel="nofollow">http://elar.rsvpu.ru/handle/123456789/2/statistics</a> , а мне была интересна эта <a href="http://dspace.nlu.edu.ua/statistics" rel="nofollow">http://dspace.nlu.edu.ua/statistics</a>. Тут одна таблица только переведена и мне было интересно как.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=3906#respond' onclick='return addComment.moveForm( "comment-3906", "3906", "respond", "505" )' aria-label='Комментарий к записи tarantul'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-6" id="li-comment-3911">
+		<div id="comment-3911">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://ideafix.name' rel='external nofollow' class='url'>IdeaFix</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-3911">
+				Август 27, 2015 в 03:59</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Как кодировать строки в принципе ясно, далее можно изменять dstat.map, только вот он в любом случае останется &#171;одноязыким&#187;.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-6282">
+		<div id="comment-6282">
+			<div class="comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/2f91c8e001f1ccf3f5f24e23486852b9?s=40&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/2f91c8e001f1ccf3f5f24e23486852b9?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://www.vsavm.by/' rel='external nofollow' class='url'>Евгений</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-6282">
+				Февраль 29, 2016 в 00:57</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Дорогой IdeaFix локализация прошла частями:<br />
+1. по отображению алфавита на русском не где непоявилось.<br />
+2. Я при локализации не нашел Файл PrivateItems.java в версии 1.8.2<br />
+может я что то не правильно делал в этих пунктах:<br />
+перейти в директорию с исходными кодами DSpace: сd [dspace-src-release]<br />
+дать команду mvn -U clean package<br />
+перейти в директорию [dspace-src-release]/dspace/target/dspace-[version]-build<br />
+дать команду ant update<br />
+обновить сервлет XMLUI в директории webapps контейнера сервлетов.<br />
+Я не совсем понимаю как перейти в директорию DSpace: сd [dspace-src-release] командная строка выкидывает сообщение об ошибке, я переходил просто в директорию по этому пути и давал команду. алфавит так и не появился.<br />
+и разъясните пункт &#8212; обновить сервлет XMLUI в директории webapps контейнера сервлетов.<br />
+и еще вопрос надо ли подключение к интернет при обновлении сервлетов.<br />
+Заранее благодарю)))</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=6282#respond' onclick='return addComment.moveForm( "comment-6282", "6282", "respond", "505" )' aria-label='Комментарий к записи Евгений'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-6293">
+		<div id="comment-6293">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=40&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/db186677905540c62b62041aea36761f?s=80&amp;d=mm&amp;r=x 2x' class='avatar avatar-40 photo' height='40' width='40' />				<cite class="fn"><a href='http://ideafix.name' rel='external nofollow' class='url'>IdeaFix</a></cite> <span class="says">говорит:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://ideafix.name/?p=505#comment-6293">
+				Февраль 29, 2016 в 20:13</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>1. В JSPUI код точно работает, в XMLUI мопед не мой, и ссылку на автора я кажется давал. Сами XMLUI не используем, поэтому что-то добавить мне трудно.<br />
+2. В начале Вы описываете процедуру DSpace целиком, это правильно, но после ant update необходимо скопировать папочки из /dspace/webapps в /tomcat/webapps.</p>
+<p>И это, 1.8.2 старый и дырявый&#8230; бросайте Вы его&#8230;. текущий релиз &#8212; 5.4. И действительно, давайте продолжим тут <a href="http://irbis.gpntb.ru/read.php?53,59259,page=32" rel="nofollow">http://irbis.gpntb.ru/read.php?53,59259,page=32</a> тут удобнее.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://ideafix.name/?p=505&#038;replytocom=6293#respond' onclick='return addComment.moveForm( "comment-6293", "6293", "respond", "505" )' aria-label='Комментарий к записи IdeaFix'>Ответить</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+
+
+	
+
+				<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Добавить комментарий <small><a rel="nofollow" id="cancel-comment-reply-link" href="/?p=505#respond" style="display:none;">Отменить ответ</a></small></h3>				<form action="http://ideafix.name/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<p class="comment-notes"><span id="email-notes">Ваш e-mail не будет опубликован.</span> Обязательные поля помечены <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Комментарий</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Имя <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Сайт</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<div class="gglcptch gglcptch_v1"><div id="gglcptch_recaptcha_1" class="gglcptch_recaptcha"></div><noscript>
+        <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LfxoAsTAAAAAEWwLThAusKBtmZlSMkNg2WO_dow" height="300" width="320" frameborder="0"></iframe><br/>
+        <textarea name="recaptcha_challenge_field" rows="3" cols="40" style="width: 320px !important; border: 1px solid #333 !important; resize: none !important;"></textarea>
+        <input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+        </noscript></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Отправить комментарий" /> <input type='hidden' name='comment_post_ID' value='505' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>				</form>
+					</div><!-- #respond -->
+		
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="text-10" class="widget-container widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- IDEAFIX_SMALLSQUARE -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-2148158402540780"
+     data-ad-slot="9920550354"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</li><li id="text-11" class="widget-container widget_text">			<div class="textwidget"><font color="red">
+<br />
+<br />
+<br />
+<center><h1>!!!ОБЪЯВЛЕНИЕ!!!</h1></center>
+<br />
+<br />
+<br />
+<h2>С 10-ого по 22-ое июня модерации комментариев и создания модов не будет.<h2></font>
+<br />
+<br />
+<br />
+</div>
+		</li><li id="search-2" class="widget-container widget_search"><h3 class="widget-title">Поиск по сайту</h3><form role="search" method="get" id="searchform" class="searchform" action="http://ideafix.name/">
+				<div>
+					<label class="screen-reader-text" for="s">Найти:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Поиск" />
+				</div>
+			</form></li><li id="categories-3" class="widget-container widget_categories"><h3 class="widget-title">Рубрики</h3>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://ideafix.name/?cat=1" >Без рубрики</a> (5)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://ideafix.name/?cat=3" >Образование</a> (30)
+<ul class='children'>
+	<li class="cat-item cat-item-4"><a href="http://ideafix.name/?cat=4" >УрГПУ</a> (28)
+	<ul class='children'>
+	<li class="cat-item cat-item-10"><a href="http://ideafix.name/?cat=10" >HTML</a> (7)
+</li>
+	<li class="cat-item cat-item-18"><a href="http://ideafix.name/?cat=18" >Python</a> (14)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://ideafix.name/?cat=14" >XHTML</a> (4)
+</li>
+	<li class="cat-item cat-item-19"><a href="http://ideafix.name/?cat=19" >Программное обеспечение курсов</a> (1)
+</li>
+	<li class="cat-item cat-item-37"><a href="http://ideafix.name/?cat=37" >Системный анализ</a> (1)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://ideafix.name/?cat=5" >УрГУ</a> (2)
+	<ul class='children'>
+	<li class="cat-item cat-item-13"><a href="http://ideafix.name/?cat=13" >Техника и технология СМИ</a> (2)
+		<ul class='children'>
+	<li class="cat-item cat-item-20"><a href="http://ideafix.name/?cat=20" >Лекции</a> (1)
+</li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://ideafix.name/?cat=6" >Работа</a> (214)
+<ul class='children'>
+	<li class="cat-item cat-item-7"><a href="http://ideafix.name/?cat=7" >Библиотека</a> (29)
+</li>
+	<li class="cat-item cat-item-21"><a href="http://ideafix.name/?cat=21" >Железки</a> (40)
+	<ul class='children'>
+	<li class="cat-item cat-item-97"><a href="http://ideafix.name/?cat=97" >771mod</a> (9)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://ideafix.name/?cat=28" >Программки</a> (8)
+</li>
+</ul>
+</li>
+		</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+				<li id="tag_cloud_canvas-2" class="widget-container widget_tag_cloud_canvas"><canvas width="350" height="300" id="tagCloudCanvas2"
+    >
+    <p>Your browser doesn't support canvas.</p>
+</canvas>
+<div id="tags">
+            <a href='http://ideafix.name/?tag=amp' class='tag-link-35 tag-link-position-1' title='1 запись' style='font-size: 8pt;'>*AMP</a>
+<a href='http://ideafix.name/?tag=asus' class='tag-link-61 tag-link-position-2' title='9 записей' style='font-size: 13.297297297297pt;'>asus</a>
+<a href='http://ideafix.name/?tag=ati' class='tag-link-27 tag-link-position-3' title='3 записи' style='font-size: 10.27027027027pt;'>ATI</a>
+<a href='http://ideafix.name/?tag=basic' class='tag-link-48 tag-link-position-4' title='2 записи' style='font-size: 9.3621621621622pt;'>basic</a>
+<a href='http://ideafix.name/?tag=bios' class='tag-link-62 tag-link-position-5' title='19 записей' style='font-size: 15.567567567568pt;'>bios</a>
+<a href='http://ideafix.name/?tag=centos' class='tag-link-26 tag-link-position-6' title='1 запись' style='font-size: 8pt;'>CentOS</a>
+<a href='http://ideafix.name/?tag=driver' class='tag-link-23 tag-link-position-7' title='8 записей' style='font-size: 12.918918918919pt;'>driver</a>
+<a href='http://ideafix.name/?tag=dspace' class='tag-link-16 tag-link-position-8' title='21 запись' style='font-size: 15.87027027027pt;'>DSpace</a>
+<a href='http://ideafix.name/?tag=fortran' class='tag-link-49 tag-link-position-9' title='2 записи' style='font-size: 9.3621621621622pt;'>fortran</a>
+<a href='http://ideafix.name/?tag=gma900' class='tag-link-22 tag-link-position-10' title='1 запись' style='font-size: 8pt;'>gma900</a>
+<a href='http://ideafix.name/?tag=hp' class='tag-link-73 tag-link-position-11' title='2 записи' style='font-size: 9.3621621621622pt;'>HP</a>
+<a href='http://ideafix.name/?tag=html-2' class='tag-link-57 tag-link-position-12' title='10 записей' style='font-size: 13.6pt;'>html</a>
+<a href='http://ideafix.name/?tag=javascript' class='tag-link-59 tag-link-position-13' title='2 записи' style='font-size: 9.3621621621622pt;'>javascript</a>
+<a href='http://ideafix.name/?tag=lga771' class='tag-link-66 tag-link-position-14' title='12 записей' style='font-size: 14.12972972973pt;'>lga771</a>
+<a href='http://ideafix.name/?tag=linux' class='tag-link-33 tag-link-position-15' title='4 записи' style='font-size: 11.027027027027pt;'>Linux</a>
+<a href='http://ideafix.name/?tag=microcode' class='tag-link-67 tag-link-position-16' title='12 записей' style='font-size: 14.12972972973pt;'>microcode</a>
+<a href='http://ideafix.name/?tag=mysql' class='tag-link-34 tag-link-position-17' title='1 запись' style='font-size: 8pt;'>MySQL</a>
+<a href='http://ideafix.name/?tag=office' class='tag-link-31 tag-link-position-18' title='2 записи' style='font-size: 9.3621621621622pt;'>office</a>
+<a href='http://ideafix.name/?tag=pascal' class='tag-link-47 tag-link-position-19' title='5 записей' style='font-size: 11.632432432432pt;'>pascal</a>
+<a href='http://ideafix.name/?tag=postgre' class='tag-link-29 tag-link-position-20' title='2 записи' style='font-size: 9.3621621621622pt;'>Postgre</a>
+<a href='http://ideafix.name/?tag=slic' class='tag-link-68 tag-link-position-21' title='12 записей' style='font-size: 14.12972972973pt;'>slic</a>
+<a href='http://ideafix.name/?tag=sunray' class='tag-link-8 tag-link-position-22' title='4 записи' style='font-size: 11.027027027027pt;'>sunray</a>
+<a href='http://ideafix.name/?tag=vista' class='tag-link-24 tag-link-position-23' title='4 записи' style='font-size: 11.027027027027pt;'>vista</a>
+<a href='http://ideafix.name/?tag=vmware' class='tag-link-30 tag-link-position-24' title='6 записей' style='font-size: 12.162162162162pt;'>vmware</a>
+<a href='http://ideafix.name/?tag=web-%d1%82%d0%b5%d1%85%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d0%b8' class='tag-link-11 tag-link-position-25' title='19 записей' style='font-size: 15.567567567568pt;'>WEB</a>
+<a href='http://ideafix.name/?tag=wifi' class='tag-link-9 tag-link-position-26' title='4 записи' style='font-size: 11.027027027027pt;'>wifi</a>
+<a href='http://ideafix.name/?tag=windows' class='tag-link-25 tag-link-position-27' title='16 записей' style='font-size: 15.037837837838pt;'>windows</a>
+<a href='http://ideafix.name/?tag=yandex' class='tag-link-76 tag-link-position-28' title='2 записи' style='font-size: 9.3621621621622pt;'>Yandex</a>
+<a href='http://ideafix.name/?tag=zotac' class='tag-link-63 tag-link-position-29' title='2 записи' style='font-size: 9.3621621621622pt;'>zotac</a>
+<a href='http://ideafix.name/?tag=%d0%b1%d0%b5%d0%b7%d1%83%d0%bc%d0%b8%d0%b5' class='tag-link-38 tag-link-position-30' title='6 записей' style='font-size: 12.162162162162pt;'>Безумие</a>
+<a href='http://ideafix.name/?tag=%d0%b1%d0%b8%d0%b1%d0%bb%d0%b8%d0%be%d1%82%d0%b5%d1%87%d0%ba%d0%b0-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b8%d1%81%d1%82%d0%b0' class='tag-link-84 tag-link-position-31' title='4 записи' style='font-size: 11.027027027027pt;'>Библиотечка программиста</a>
+<a href='http://ideafix.name/?tag=%d0%b6%d1%83%d1%80%d1%84%d0%b0%d0%ba' class='tag-link-86 tag-link-position-32' title='2 записи' style='font-size: 9.3621621621622pt;'>ЖУРФАК</a>
+<a href='http://ideafix.name/?tag=%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d1%8f' class='tag-link-12 tag-link-position-33' title='27 записей' style='font-size: 16.702702702703pt;'>Лекция</a>
+<a href='http://ideafix.name/?tag=%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f' class='tag-link-88 tag-link-position-34' title='3 записи' style='font-size: 10.27027027027pt;'>Локализация</a>
+<a href='http://ideafix.name/?tag=%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%b0-%d0%b2%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%b8' class='tag-link-36 tag-link-position-35' title='139 записей' style='font-size: 22pt;'>Машина времени</a>
+<a href='http://ideafix.name/?tag=%d0%bf%d1%80%d0%b8%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5' class='tag-link-17 tag-link-position-36' title='3 записи' style='font-size: 10.27027027027pt;'>Приложение</a>
+<a href='http://ideafix.name/?tag=%d1%80%d0%b5%d0%bc%d0%be%d0%bd%d1%82' class='tag-link-32 tag-link-position-37' title='5 записей' style='font-size: 11.632432432432pt;'>Ремонт</a>
+<a href='http://ideafix.name/?tag=%d0%b6%d1%83%d1%80%d0%bd%d0%b0%d0%bb' class='tag-link-43 tag-link-position-38' title='32 записи' style='font-size: 17.232432432432pt;'>журнал</a>
+<a href='http://ideafix.name/?tag=%d0%ba%d0%b0%d0%bb%d1%8c%d0%ba%d1%83%d0%bb%d1%8f%d1%82%d0%be%d1%80' class='tag-link-55 tag-link-position-39' title='4 записи' style='font-size: 11.027027027027pt;'>калькулятор</a>
+<a href='http://ideafix.name/?tag=%d0%ba%d0%bd%d0%b8%d0%b3%d0%b0' class='tag-link-44 tag-link-position-40' title='101 запись' style='font-size: 20.940540540541pt;'>книга</a>
+<a href='http://ideafix.name/?tag=%d0%bc%d0%b0%d1%82%d0%b5%d0%bc%d0%b0%d1%82%d0%b8%d0%ba%d0%b0' class='tag-link-51 tag-link-position-41' title='2 записи' style='font-size: 9.3621621621622pt;'>математика</a>
+<a href='http://ideafix.name/?tag=%d0%bf%d1%80%d0%b8%d0%bd%d1%82%d0%b5%d1%80' class='tag-link-39 tag-link-position-42' title='2 записи' style='font-size: 9.3621621621622pt;'>принтер</a>
+<a href='http://ideafix.name/?tag=%d1%82%d0%b2%d0%b0%d1%80%d1%8c' class='tag-link-45 tag-link-position-43' title='6 записей' style='font-size: 12.162162162162pt;'>тварь</a>
+<a href='http://ideafix.name/?tag=%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c' class='tag-link-72 tag-link-position-44' title='2 записи' style='font-size: 9.3621621621622pt;'>усилитель</a>
+<a href='http://ideafix.name/?tag=%d1%8d%d0%bb%d0%b5%d0%ba%d1%82%d1%80%d0%be%d0%bd%d0%b8%d0%ba%d0%b0%d1%8d%d0%bb%d0%b5%d0%ba%d1%82%d1%80%d0%be%d0%bd%d0%b8%d0%ba%d0%b0' class='tag-link-50 tag-link-position-45' title='19 записей' style='font-size: 15.567567567568pt;'>электро/тех/ника</a>        </div>
+<script type="text/javascript">
+jQuery(function() {
+   if(!jQuery('#tagCloudCanvas2').tagcanvas({
+     textColour : '#333333',
+     shape : 'sphere',
+     outlineThickness : 1,
+     maxSpeed : 0.03,
+     depth : 0.75
+   }, 'tags')) {
+     // TagCanvas failed to load
+     jQuery('#tagCloudCanvas2Container').hide();
+   }
+   // your other jQuery stuff here...
+ });
+</script>    
+        </li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Архивы</h3>		<ul>
+			<li><a href='http://ideafix.name/?m=201606'>Июнь 2016</a>&nbsp;(1)</li>
+	<li><a href='http://ideafix.name/?m=201605'>Май 2016</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201604'>Апрель 2016</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201603'>Март 2016</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201602'>Февраль 2016</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201601'>Январь 2016</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201512'>Декабрь 2015</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201511'>Ноябрь 2015</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201510'>Октябрь 2015</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201509'>Сентябрь 2015</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201508'>Август 2015</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201507'>Июль 2015</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201506'>Июнь 2015</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201505'>Май 2015</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201504'>Апрель 2015</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201503'>Март 2015</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201502'>Февраль 2015</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201501'>Январь 2015</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201412'>Декабрь 2014</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201411'>Ноябрь 2014</a>&nbsp;(5)</li>
+	<li><a href='http://ideafix.name/?m=201410'>Октябрь 2014</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201409'>Сентябрь 2014</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201408'>Август 2014</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201407'>Июль 2014</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201406'>Июнь 2014</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201405'>Май 2014</a>&nbsp;(15)</li>
+	<li><a href='http://ideafix.name/?m=201404'>Апрель 2014</a>&nbsp;(5)</li>
+	<li><a href='http://ideafix.name/?m=201403'>Март 2014</a>&nbsp;(18)</li>
+	<li><a href='http://ideafix.name/?m=201402'>Февраль 2014</a>&nbsp;(6)</li>
+	<li><a href='http://ideafix.name/?m=201401'>Январь 2014</a>&nbsp;(10)</li>
+	<li><a href='http://ideafix.name/?m=201312'>Декабрь 2013</a>&nbsp;(22)</li>
+	<li><a href='http://ideafix.name/?m=201311'>Ноябрь 2013</a>&nbsp;(9)</li>
+	<li><a href='http://ideafix.name/?m=201310'>Октябрь 2013</a>&nbsp;(11)</li>
+	<li><a href='http://ideafix.name/?m=201309'>Сентябрь 2013</a>&nbsp;(9)</li>
+	<li><a href='http://ideafix.name/?m=201308'>Август 2013</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201307'>Июль 2013</a>&nbsp;(3)</li>
+	<li><a href='http://ideafix.name/?m=201306'>Июнь 2013</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201305'>Май 2013</a>&nbsp;(7)</li>
+	<li><a href='http://ideafix.name/?m=201304'>Апрель 2013</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201303'>Март 2013</a>&nbsp;(1)</li>
+	<li><a href='http://ideafix.name/?m=201302'>Февраль 2013</a>&nbsp;(1)</li>
+	<li><a href='http://ideafix.name/?m=201211'>Ноябрь 2012</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201210'>Октябрь 2012</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201209'>Сентябрь 2012</a>&nbsp;(4)</li>
+	<li><a href='http://ideafix.name/?m=201208'>Август 2012</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201207'>Июль 2012</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201206'>Июнь 2012</a>&nbsp;(2)</li>
+	<li><a href='http://ideafix.name/?m=201205'>Май 2012</a>&nbsp;(6)</li>
+	<li><a href='http://ideafix.name/?m=201204'>Апрель 2012</a>&nbsp;(1)</li>
+	<li><a href='http://ideafix.name/?m=201203'>Март 2012</a>&nbsp;(7)</li>
+	<li><a href='http://ideafix.name/?m=201202'>Февраль 2012</a>&nbsp;(16)</li>
+		</ul>
+		</li>			</ul>
+		</div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+<div align="center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- IDEAFIX_FOOTER -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2148158402540780"
+     data-ad-slot="6408680756"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+			<div id="site-info">
+				<a href="http://ideafix.name/" title="ideafix.name" rel="home">
+					ideafix.name				</a>
+			</div><!-- #site-info -->
+
+
+
+<!--
+			<div id="site-generator">
+								<a href="https://wordpress.org/" title="Современная персональная платформа для публикаций">Сайт работает на WordPress.</a>
+			</div> -->
+<!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<script type='text/javascript' src='http://ideafix.name/wp-includes/js/comment-reply.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/simple-lightbox/client/js/prod/lib.core.js?ver=2.5.3'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/simple-lightbox/client/js/prod/lib.view.js?ver=2.5.3'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/simple-lightbox/themes/baseline/js/prod/client.js?ver=2.5.3'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/simple-lightbox/themes/default/js/prod/client.js?ver=2.5.3'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/simple-lightbox/template-tags/item/js/prod/tag.item.js?ver=2.5.3'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/simple-lightbox/template-tags/ui/js/prod/tag.ui.js?ver=2.5.3'></script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/simple-lightbox/content-handlers/image/js/prod/handler.image.js?ver=2.5.3'></script>
+<script type='text/javascript' data-cfasync="false" async="async" defer="defer" src='//www.google.com/recaptcha/api/js/recaptcha_ajax.js?ver=4.5.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gglcptch = {"options":{"version":"v1","sitekey":"6LfxoAsTAAAAAEWwLThAusKBtmZlSMkNg2WO_dow","theme":"clean","error":"<strong>\u0412\u043d\u0438\u043c\u0430\u043d\u0438\u0435:<\/strong>&nbsp;\u0412 \u0442\u0435\u043a\u0443\u0449\u0435\u043c \u0431\u043b\u043e\u043a\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e \u0431\u043e\u043b\u0435\u0435 \u043e\u0434\u043d\u043e\u0433\u043e \u0431\u043b\u043e\u043a\u0430 reCAPTCHA. \u0412 \u044d\u0442\u043e\u043c \u0441\u043b\u0443\u0447\u0430\u0435 reCAPTCHA \u043d\u0435 \u0431\u0443\u0434\u0435\u0442 \u0440\u0430\u0431\u043e\u0442\u0430\u0442\u044c \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0443\u0434\u0430\u043b\u0438\u0442\u0435 \u0432\u0441\u0435 \u043b\u0438\u0448\u043d\u0438\u0435 \u0431\u043b\u043e\u043a\u0438 reCAPTCHA."},"vars":{"ajaxurl":"http:\/\/ideafix.name\/wp-admin\/admin-ajax.php","error_msg":"\u041e\u0448\u0438\u0431\u043a\u0430: \u0412\u044b \u0432\u0432\u0435\u043b\u0438 \u043d\u0435\u0432\u0435\u0440\u043d\u043e\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 reCAPTCHA.","nonce":"a33617d7a3"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ideafix.name/wp-content/plugins/google-captcha/js/script.js?ver=4.5.2'></script>
+<script type="text/javascript" id="slb_footer">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB && SLB.has_child('View.init') ) { SLB.View.init({"ui_autofit":true,"ui_animate":true,"slideshow_autostart":true,"slideshow_duration":"6","group_loop":true,"ui_overlay_opacity":"0.8","ui_title_default":false,"theme_default":"slb_default","ui_labels":{"loading":"Loading","close":"Close","nav_next":"Next","nav_prev":"Previous","slideshow_start":"Start slideshow","slideshow_stop":"Stop slideshow","group_status":"Item %current% of %total%"}}); }
+if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"752700520":{"id":519,"type":"image","source":"http:\/\/ideafix.name\/wp-content\/uploads\/2012\/06\/01.jpg","internal":true,"sizes":{"thumbnail":{"file":"01-150x150.jpg","width":"150","height":"150"},"medium":{"file":"01-300x242.jpg","width":"300","height":"242"},"original":{"file":"2012\/06\/01.jpg","width":"650","height":"526"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""},"description":"","title":"0","caption":""},"1093863861":{"id":1529,"type":"image","source":"http:\/\/ideafix.name\/wp-content\/uploads\/2012\/06\/ukr.jpg","internal":true,"sizes":{"thumbnail":{"file":"ukr-150x150.jpg","width":150,"height":150,"mime-type":"image\/jpeg"},"medium":{"file":"ukr-300x129.jpg","width":300,"height":129,"mime-type":"image\/jpeg"},"original":{"file":"2012\/06\/ukr.jpg","width":938,"height":404}},"image_meta":{"aperture":0,"credit":"","camera":"","caption":"","created_timestamp":0,"copyright":"","focal_length":0,"iso":0,"shutter_speed":0,"title":""},"description":"","title":"ukr","caption":""}});} }
+/* THM */
+if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_baseline',{"name":"\u0411\u0430\u0437\u043e\u0432\u0430\u044f \u043b\u0438\u043d\u0438\u044f","parent":"","styles":[{"handle":"base","uri":"http:\/\/ideafix.name\/wp-content\/plugins\/simple-lightbox\/themes\/baseline\/css\/style.css","deps":[]}],"layout_raw":"<div class=\"slb_container\"><div class=\"slb_content\">{{item.content}}<div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><div class=\"slb_controls\"><span class=\"slb_close\">{{ui.close}}<\/span><span class=\"slb_slideshow\">{{ui.slideshow_control}}<\/span><\/div><div class=\"slb_loading\">{{ui.loading}}<\/div><\/div><div class=\"slb_details\"><div class=\"inner\"><div class=\"slb_data\"><div class=\"slb_data_content\"><span class=\"slb_data_title\">{{item.title}}<\/span><span class=\"slb_group_status\">{{ui.group_status}}<\/span><div class=\"slb_data_desc\">{{item.description}}<\/div><\/div><\/div><div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><\/div><\/div><\/div>"}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_default',{"name":"\u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e (\u0441\u0432\u0435\u0442\u043b\u044b\u0439)","parent":"slb_baseline","styles":[{"handle":"font","uri":"http:\/\/fonts.googleapis.com\/css?family=Yanone+Kaffeesatz","deps":[]},{"handle":"base","uri":"http:\/\/ideafix.name\/wp-content\/plugins\/simple-lightbox\/themes\/default\/css\/style.css","deps":[]}]}); }})})(jQuery);}/* ]]> */</script>
+<script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
+</body>
+</html>

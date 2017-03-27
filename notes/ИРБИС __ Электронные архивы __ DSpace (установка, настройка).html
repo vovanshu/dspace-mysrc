@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="windows-1251"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html lang="RU">
+  <head>
+    <style type="text/css">
+      /* Element level classes */
+
+body
+{
+    color: Black;
+    font-size: 13px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    background-color: White;
+    margin: 8px;
+}
+
+td, th
+{
+    color: Black;
+    font-size: 13px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+}
+
+img
+{
+    border-width: 0px;
+    vertical-align: middle;
+}
+
+a
+{
+    color: #000099;
+    text-decoration: none;
+}
+a:active
+{
+    color: #FF6600;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #000099;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #FF6600;
+}
+
+input[type=text], input[type=password], input[type=file], select
+{
+    background-color: White;
+    color: Black;
+    font-size: 13px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+
+    vertical-align: middle;
+
+}
+
+textarea
+{
+    background-color: White;
+    color: Black;
+    font-size: 13px;
+    font-family: Lucida Console, Andale Mono, Courier New, Courier;
+}
+
+input[type=submit]
+{
+    border: 1px dotted #808080;
+    background-color: #EEEEEE;
+    font-size: 13px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    vertical-align: middle;
+}
+
+input
+{
+    vertical-align: middle;
+}
+
+
+/* new styles */
+
+#phorum-index
+{
+    width: 100%;
+    border: 1px solid #808080;
+    border-bottom-width: 0px;
+    text-align: left;
+}
+
+#phorum-index th
+{
+    border-bottom: 1px solid #808080;
+    background-color: #EEEEEE;
+    padding: 3px 0 3px 0;
+}
+
+#phorum-index td
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    background-color: White;
+    padding: 3px 0 3px 0;
+    border-bottom: 1px solid #808080;
+}
+
+#phorum-index th.forum-name
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 15px;
+    padding: 3px 0 3px 3px;
+}
+
+#phorum-index th.forum-name a
+{
+    color: Black;
+}
+
+#phorum-index th.forum-threads
+{
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#phorum-index th.forum-posts
+{
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#phorum-index th.forum-last-post
+{
+    padding: 3px 15px 3px 3px;
+    vertical-align: middle;
+}
+
+#phorum-index td.forum-name
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0 5px 15px;
+}
+
+#phorum-index td.forum-name p
+{
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    margin: 0 15px 0 0;
+}
+
+#phorum-index td.forum-name small
+{
+    font-weight: normal;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+}
+
+#phorum-index td.forum-threads
+{
+    width: 120px;
+    text-align: center;
+}
+
+#phorum-index td.forum-posts
+{
+    width: 120px;
+    text-align: center;
+}
+
+#phorum-index td.forum-last-post
+{
+    width: 120px;
+    padding: 0 15px 0 0;
+}
+
+#phorum-menu-table
+{
+    width: 100%;
+    border-width: 0px;
+}
+
+#phorum-menu
+{
+    padding: 5px 3px 0 0;
+    vertical-align: top;
+    width: 200px;
+}
+
+#phorum-content
+{
+    padding: 5px 0 0 2px;
+    vertical-align: top;
+}
+
+div.phorum-menu
+{
+    font-size: 13px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    background-color: White;
+    border: 1px solid #808080;
+    padding: 3px;
+}
+
+div.phorum-menu ul
+{
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+div.phorum-menu li
+{
+    font-weight: bold;
+    font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+    font-size: 12px;
+    padding: 0 0 0 15px;
+    margin-top:3px;
+    background-image: url('templates/default/images/square_bullet.png');
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+}
+
+div.phorum-menu a
+{
+    font-weight: normal;
+    color: #000000;
+}
+
+div.phorum-menu a:hover
+{
+    color: #FF6600;
+}
+
+div.phorum-menu a.phorum-current-page
+{
+    font-weight: bold;
+}
+
+#phorum-post-form ul
+{
+    padding: 0 0 0 20px;
+    margin: 3px 0px 8px 0px;
+    font-size: 11px;
+}
+
+#phorum-post-form li
+{
+    margin-bottom: 3px;
+}
+
+#phorum-attachment-list td
+{
+    font-size: 11px;
+}
+
+    /* Standard classes for use in any page */
+    /* PhorumDesignDiv - a div for keeping the forum-size size */
+    .PDDiv
+    {
+        width: 90%;
+        text-align: left;
+    }
+    /* new class for layouting the submit-buttons in IE too */
+    .PhorumSubmit {
+        border: 1px dotted #808080;
+        color: Black;
+        background-color: #EEEEEE;
+        font-size: 13px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        vertical-align: middle;
+    }
+
+    .PhorumTitleText
+    {
+        float: right;
+    }
+
+    .PhorumStdBlock
+    {
+        font-size: 13px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        background-color: White;
+        border: 1px solid #808080;
+/*        width: 100%; */
+        padding: 3px;
+        text-align: left;
+    }
+
+    .PhorumStdBlockHeader
+    {
+        font-size: 13px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        background-color: #EEEEEE;
+/*        width: 100%; */
+        border-left: 1px solid #808080;
+        border-right: 1px solid #808080;
+        border-top: 1px solid #808080;
+        padding: 3px;
+        text-align: left;
+    }
+
+    .PhorumHeaderText
+    {
+        font-weight: bold;
+    }
+
+    .PhorumNavBlock
+    {
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        border: 1px solid #808080;
+        margin-top: 1px;
+        margin-bottom: 1px;
+/*        width: 100%; */
+        background-color: #EEEEEE;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .PhorumNavHeading
+    {
+        font-weight: bold;
+    }
+
+    A.PhorumNavLink
+    {
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #EEEEEE;
+        border-width: 1px;
+        padding: 0px 4px 0px 4px;
+    }
+
+    .PhorumSelectedFolder
+    {
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #EEEEEE;
+        border-width: 1px;
+        padding: 0px 4px 0px 4px;
+    }
+
+    A.PhorumNavLink:hover
+    {
+        background-color: #FFFFFF;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #808080;
+        border-width: 1px;
+        color: #FF6600;
+    }
+
+    .PhorumFloatingText
+    {
+        padding: 10px;
+    }
+
+    .PhorumHeadingLeft
+    {
+        padding-left: 3px;
+        font-weight: bold;
+    }
+
+    .PhorumUserError
+    {
+        padding: 10px;
+        text-align: center;
+        color: Red;
+        font-size: 15px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .PhorumOkMsg
+    {
+        padding: 10px;
+        text-align: center;
+        color: DarkGreen;
+        font-size: 15px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+   .PhorumNewFlag
+    {
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        font-size: 10px;
+        font-weight: bold;
+        color: #CC0000;
+    }
+
+    .PhorumNotificationArea
+    {
+        float: right;
+        border-style: dotted;
+        border-color: #808080;
+        border-width: 1px;
+    }
+
+    /* PSUEDO Table classes                                       */
+    /* In addition to these, each file that uses them will have a */
+    /* column with a style property to set its right margin       */
+
+    .PhorumColumnFloatXSmall
+    {
+        float: right;
+        width: 75px;
+    }
+
+    .PhorumColumnFloatSmall
+    {
+        float: right;
+        width: 100px;
+    }
+
+    .PhorumColumnFloatMedium
+    {
+        float: right;
+        width: 150px;
+    }
+
+    .PhorumColumnFloatLarge
+    {
+        float: right;
+        width: 200px;
+    }
+
+    .PhorumColumnFloatXLarge
+    {
+        float: right;
+        width: 400px;
+    }
+
+    .PhorumRowBlock
+    {
+        background-color: White;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 5px 0px 0px 0px;
+    }
+
+    .PhorumRowBlockAlt
+    {
+        background-color: #EEEEEE;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 5px 0px 0px 0px;
+    }
+
+    /************/
+
+
+    /* All that is left of the tables */
+
+    .PhorumStdTable
+    {
+        border-style: solid;
+        border-color: #808080;
+        border-width: 1px;
+        width: 100%;
+    }
+
+    .PhorumTableHeader
+    {
+        background-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-color: #808080;
+        border-bottom-width: 1px;
+        color: #000000;
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-weight: bold;
+        padding: 3px;
+    }
+
+    .PhorumTableRow
+    {
+        background-color: White;
+        border-bottom-style: solid;
+        border-bottom-color: #F2F2F2;
+        border-bottom-width: 1px;
+        color: Black;
+        font-size: 13px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        height: 35px;
+        padding: 3px;
+    }
+
+    .PhorumTableRowAlt
+    {
+        background-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-color: #F2F2F2;
+        border-bottom-width: 1px;
+        color: #000000;
+        font-size: 13px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        height: 35px;
+        padding: 3px;
+    }
+
+    table.PhorumFormTable td
+    {
+        height: 26px;
+    }
+
+    /**********************/
+
+
+    /* Read Page specifics */
+
+    .PhorumReadMessageBlock
+    {
+        margin-bottom: 5px;
+    }
+
+   .PhorumReadBodySubject
+    {
+        color: Black;
+        font-size: 15px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+        padding-left: 3px;
+    }
+
+    .PhorumReadBodyHead
+    {
+        padding-left: 5px;
+    }
+
+    .PhorumReadBodyText
+    {
+        font-size: 13px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        padding: 5px;
+    }
+
+    .PhorumReadNavBlock
+    {
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        border-left: 1px solid #808080;
+        border-right: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+/*        width: 100%; */
+        background-color: #EEEEEE;
+        padding: 2px 3px 2px 3px;
+    }
+
+    /********************/
+
+    /* List page specifics */
+
+    .PhorumListSubText
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumListPageLink
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumListSubjPrefix
+    {
+        font-weight: bold;
+    }
+
+    /********************/
+
+    /* Posting editor specifics */
+
+    .PhorumListModLink, .PhorumListModLink a
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumAttachmentRow {
+        border-bottom: 1px solid #EEEEEE;
+        padding: 3px 0px 3px 0px;
+    }
+
+    /********************/
+
+    /* PM specifics */
+
+    .phorum-recipientblock
+    {
+        border: 1px solid black;
+        position:relative;
+        float:left;
+        padding: 1px 1px 1px 5px;
+        margin: 0px 5px 5px 0px;
+        font-size: 11px;
+        background-color: White;
+        border: 1px solid #808080;
+        white-space: nowrap;
+    }
+
+    .phorum-pmuserselection
+    {
+        padding-bottom: 5px;
+    }
+
+    .phorum-gaugetable {
+        border-collapse: collapse;
+    }
+
+    .phorum-gauge {
+        border: 1px solid #808080;
+        background-color: #EEEEEE;
+    }
+
+    .phorum-gaugeprefix {
+        border: none;
+        background-color: white;
+        padding-right: 10px;
+    }
+
+    /********************/
+
+    /* Override classes - Must stay at the end */
+
+    .PhorumNarrowBlock
+    {
+        width: 600px;
+    }
+
+    .PhorumSmallFont
+    {
+        font-size: 11px;
+    }
+
+    .PhorumLargeFont
+    {
+        color: Black;
+        font-size: 15px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+
+    .PhorumFooterPlug
+    {
+        margin-top: 10px;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+
+
+    /*   BBCode styles  */
+
+    blockquote.bbcode
+    {
+        font-size: 11px;
+        margin: 0 0 0 10px;
+    }
+
+    blockquote.bbcode div
+    {
+        margin: 0;
+        padding: 5px;
+        border: 1px solid #808080;
+    }
+
+    blockquote.bbcode strong
+    {
+        font-style: italic;
+        margin: 0 0 3px 0;
+    }
+
+    </style>
+          <link rel="alternate" type="application/rss+xml" title="RSS-Feed" href="http://irbis.gpntb.ru/rss.php?53,59259" />
+                <title>&#1048;&#1056;&#1041;&#1048;&#1057; :: &#1069;&#1083;&#1077;&#1082;&#1090;&#1088;&#1086;&#1085;&#1085;&#1099;&#1077; &#1072;&#1088;&#1093;&#1080;&#1074;&#1099; :: DSpace (установка, настройка)</title>
+    <div style="text-align:center;margin-bottom:2em;">
+<a style="text-decoration:underline;" href="http://www.elnit.org" target="_blank">Ассоциация ЭБНИТ</a>
+&nbsp;&nbsp;
+<a style="text-decoration:underline;" href="http://vlibrarynew.gpntb.ru/icorp/" target="_blank">ИРБИС-корпорация</a>
+&nbsp;&nbsp;
+<a style="text-decoration:underline;" href="http://wiki.elnit.org" target="_blank">Вики-Ирбис</a>
+&nbsp;&nbsp;
+<a style="text-decoration:underline;" href="http://sntnarciss.ru/irbis.html" target="_blank">Online/CHM справка Ирбис</a>
+&nbsp;&nbsp;
+<a style="text-decoration:underline;" href="ftp://ftp.gpntb.ru/" target="_blank">FTP-сервер</a>
+</div>
+<!--
+<div style="text-align:center;"><a href="http://portal.mubint.ru/library/webinars/catalogue/Pages/web_13.04.2012.aspx" target="_blank"><img src="http://elib.mubint.ru/images/20120413_analitika.gif" border="0" /></a></div>--><script type="text/javascript" src="http://irbis.gpntb.ru/mods/editor_tools/editor_tools.js"></script><link rel="stylesheet" type="text/css" href="http://irbis.gpntb.ru/mods/editor_tools/editor_tools.css"></link><link rel="stylesheet" href="http://irbis.gpntb.ru/mods/editor_tools/colorpicker/js_color_picker_v2.css"/>  </head>
+  <body onload="">
+    <div align="center">
+      <div class="PDDiv">
+                <span class="PhorumTitleText PhorumLargeFont">
+          <a href="http://irbis.gpntb.ru/list.php?53">Электронные архивы</a>&nbsp;:&nbsp;          ИРБИС        </span>
+        <a href="http://irbis.gpntb.ru/index.php"><img src="templates/irbis/images/irbis.gif" alt="Irbis" title="Irbis" border="0" /></a>        <div class="PhorumFloatingText">Cистема структурированного хранения электронных документов, обеспечивающая надежность хранения, конфиденциальность и разграничение прав доступа, отслеживание истории использования документа, быстрый и удобный поиск. Источник: <a href="http://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B0%D1%80%D1%85%D0%B8%D0%B2" target="_blank">Wikipedia</a>&nbsp;</div>
+
+    <style type="text/css">
+    .mod_smileys_img {
+        vertical-align: bottom;
+        margin: 0px 3px 0px 3px;
+        border: none;
+    }
+    </style> <div class="PhorumNavBlock" style="text-align: left;">
+  <div style="float: right;">
+    <span class="PhorumNavHeading">Темы:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,1464711120,newer">&lt;&lt;</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,1464711120,older">&gt;&gt;</a>
+  </div>
+  <span class="PhorumNavHeading PhorumHeadingLeft">Навигация:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/index.php">Список форумов</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/list.php?53">Список тем</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/posting.php?53">Новая тема</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/search.php?53">Искать</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/login.php?53">Войти</a></div>
+  <div class="PhorumNavBlock" style="text-align: left;">
+      <div style="float: right;">
+      <span class="PhorumNavHeading">Страницы:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=8">&lt;&lt;</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=1">Первая...</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=4">4</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=5">5</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=6">6</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=7">7</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=8">8</a><span class="PhorumNavLink"><strong>9</strong></span><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=10">10</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=11">11</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=12">12</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=13">13</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=14">14</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=36">...Последняя</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=10">&gt;&gt;</a>    </div>
+    <span class="PhorumNavHeading PhorumHeadingLeft">Страница: </span>9 из 36</div>
+
+      <a name="msg-78084"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3645">git</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 10, January, 2013 06:45</div><br />
+      <div class="PhorumReadBodyText"> И снова насчет алфавита в xmlui интерфейсе... У кого на каком сервере dspace? На винде после правки исходника и пересборки все норм установилось,а вот на линуксе не получается, может какие то особенности с пересборкой? подскажите плиз...</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,78084#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,78084,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-78113"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 10, January, 2013 13:14</div><br />
+      <div class="PhorumReadBodyText"> Так папочка webapps кроссплатформнная сверху донизу.... если не получилось - скопируйте виндовую версию :) Я был вынужден немного pom поменять чтобы WAR'ик собирался и в последствии засовывался в джеронимо - всё работает. Сборка под виндой - джеронимо и долдфиш под линуксом и соляркой соответственно.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,78113#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,78113,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-78886"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3541">kuzina13</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 28, January, 2013 11:58</div><br />
+      <div class="PhorumReadBodyText"> Добрый день! Помогите пожалуйста разобраться: допустим в моей коллекции мне не нужен ресурс и я его удаляю, мне пишут что ресурс удален, но <u>автор</u> остается...как удалить автора совсем?</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,78886#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,78886,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-78923"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 29, January, 2013 08:13</div><br />
+      <div class="PhorumReadBodyText"> Переиндексация. Обсуждалось в пределах трех страниц назад.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,78923#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,78923,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79116"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3623">byy</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 03, February, 2013 14:17</div><br />
+      <div class="PhorumReadBodyText"> Здравствуйте! никак не могу обновить версию DSpace 1.8.2 на 3.1, делаю все как в manual написано, но не получается. Пожалуйста, напишите пошаговую инструкцию?<br />
+заранее большое спасибо!</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79116#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79116,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79132"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,2281">woodyfon</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 04, February, 2013 10:31</div><br />
+      <div class="PhorumReadBodyText"> Попробуйте обновить сначала до версии 3.0. Затем до версии 3.1.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79132#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79132,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79146"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3623">byy</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 04, February, 2013 14:42</div><br />
+      <div class="PhorumReadBodyText"> всё равно не получается, видимо что-то не так делаю.<img class="mod_smileys_img" src="mods/smileys/images/smilie2.gif" alt="sad smiley" title="sad smiley"/><img class="mod_smileys_img" src="mods/smileys/images/smilie11.gif" alt="confused smiley" title="confused smiley"/><br />
+1. скачиваю и распаковываю новую версию [3.0] в другую папку<br />
+2. копирую "в запас" [1.8.2] [dspace-source]/dspace/modules/jspui/src/main/webapp/ и [dspace]/config<br />
+3. делаю на рабочей версии 1.8.2 - cd [dspace-source]/dspace/ <i>mvn clean package</i><br />
+После этой процедуры в target новый вариант dspace-[version]-build не появляется, или надо <u>скопировать target из новой распакованной версии</u>?<br />
+4. Обновляю cd [dspace-source]/dspace/target/dspace-[version]-build.dir <i>ant update</i> <br />
+5. копирование на кота webapp и т.д.<br />
+или распаковывать версию [3.0] поверх [1.8.2] версии?? <br />
+<br />
+Я "новичок" в этом деле, что-то недопонимаю...<img class="mod_smileys_img" src="mods/smileys/images/smilie2.gif" alt="sad smiley" title="sad smiley"/></div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79146#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79146,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79155"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,2281">woodyfon</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 04, February, 2013 19:21</div><br />
+      <div class="PhorumReadBodyText"> Скачайте мануал по ссылке <br />
+<a target="_blank"  href="https://github.com/DSpace/DSpace/raw/master/dspace/docs/DSpace-Manual.pdf">DSpace Manual PDF 3.1</a><br />
+Инструкция изложена в разделе 5.1. Более подробнее врядли можно написать.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79155#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79155,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79157"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3623">byy</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 04, February, 2013 19:52</div><br />
+      <div class="PhorumReadBodyText"> woodyfon, спасибо!<img class="mod_smileys_img" src="mods/smileys/images/smilie1.gif" alt="smiling smiley" title="smiling smiley"/> вроде так всё делаем, как там написано, будем пробовать дальше!</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79157#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79157,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79752"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3780">kudin</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 24, February, 2013 10:51</div><br />
+      <div class="PhorumReadBodyText"> Здравствуйте, такая проблема. На Freebsd 8.3 стоит Dspace 1.8.2 (обновлялся последовательно с 1.6.2 и 1.7.2). Добавлены русский и украинский языки. И всё вобщем-то работает, но есть непонятная фигня. Если, к примеру, зайти под украинским языком в редактирование новостей и написать текст, то эти изменения переходят и на новости английского языка. Верна и обратная ситуация- изменения новостей под английским распространяются на украинский. С русским языком всё нормально, новости сохраняются правильно.<br />
+Пробовал правильный текст загонять напрямую в news-top.html, news-top_uk.html и news-side.html, news-side_uk.html. Непомогло :( Подскажите, пожалуйста, в каком напралении копать</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79752#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79752,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79760"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 24, February, 2013 19:51</div><br />
+      <div class="PhorumReadBodyText"> Коллеги, есть вопрос по почте:<br />
+<br />
+Для подтверждения регистрации и рассылки уведомлений поднял на хосте с сабжем smtp сервер. Сделал его доступным только с локалхоста, ну и далее все настройки под одного единственного клиента, чтоб сабжу было удобно.<br />
+<br />
+В конфиге прописал адрес сендера dspace-noreply@servername, адрес для ответа - реальную почтовую группу автоматизаторов билиотеи и всё такое... в общем, всё работает! yandex и gmail пользователи всё получают и в поле адреса для ответа то что нужно и вообще всё хорошо, но! Пользователи mail.ru не получают письма со ссылкой на подтверждение регистрации, как показывает практика, mail.ru проверяет на валидность не сам адрес отправителя, а mx запись имени хоста (видимо?) и в итоге я имею вот что:<br />
+<br />
+Action: failed<br />
+Status: 5.5.0<br />
+Diagnostic-Code: smtp;550 Unroutable sender address<br />
+<br />
+Для чего это делается? Для борьбы со спамом? Да ладно, я в MAIL FROM: пишу <a target="_blank"  href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#117;&#116;&#105;&#110;&#64;&#103;&#111;&#118;&#46;&#114;&#117;">&#112;&#117;&#116;&#105;&#110;&#64;&#103;&#111;&#118;&#46;&#114;&#117;</a> и письмо уходит.... т.е. с точки зрения здравого смысла против спама эта мера бессильна, но... я то могу так написать и у меня всё уйдет, а вот сервер логов моего UPS или моего рейд контроллера не позволяет таких фокусов :) У него ни reply-to поля нет, ни mail-from... щас проверил - с мейлом мои железки не работают.<br />
+<br />
+Да, можно указывать реальный адрес и тогда проблем не будет, но если я не хочу (или не могу) его указывать? Как правильно обойти данную особенность mail.ru, да и наверняка многих других почтовиков?</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79760#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79760,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79816"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+      <img src="http://irbis.gpntb.ru/file.php?53,file=7704" alt="" align="left" style="border: 0px; padding: 5px;"/>
+ 
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3650">Van</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 26, February, 2013 15:14</div><br />
+      <div class="PhorumReadBodyText"> Здравствуйте.<br />
+Прошу помощи.<br />
+Проблема следующая - есть установленный Dspace 1.8, есть бэкап от старой базы (PostgreSQL) и папка со старым Dspace-ом. Бэкапом восстановили только структуру базы, а вот как связать структуру с файлами в папке assetstore - непонятно. Вариант с импортом-экспортом (как советовал IdeaFix) как-то не получается. <br />
+Заранее благодарю</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79816#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79816,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79820"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 26, February, 2013 20:06</div><br />
+      <div class="PhorumReadBodyText"> Вроде в теме Grievous какую-то скриптовую оснастку показывал... поищите. Но что-то мне кажется, не всё так просто будет, если есть исключительно дамп и assetstore.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79820#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79820,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79927"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 03, March, 2013 12:49</div><br />
+      <div class="PhorumReadBodyText"> Коллеги, а как создать раздел/коллекцию с заданным ID?<br />
+<br />
+Переношу большое древо частично с изменением структуры. Полный импорт и экспорт метадаты не нравится - много лопатить руками, правка базы как-то неочевидна. Наследуемых удалений нет.<br />
+<br />
+А пути (локальные хэндлы) необходимо сохранить.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79927#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79927,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-79928"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 03, March, 2013 17:37</div><br />
+      <div class="PhorumReadBodyText"> Сейчас делаю так:<br />
+<br />
+1. Иду в старый диспейс, выгружаю коллекцию, запоминаю ID коллекции (ну и раздела соответственно).<br />
+2.1. Иду в pgadmin нового диспейса, устанавливаю счетчик хэндлов (ID'ов) равным ID раздела минус 1.<br />
+2.2. Иду в веб админку нового диспейса, создаю раздел, ID совпадает с таковым у старого.<br />
+2.3. Иду в pgadmin нового диспейса, устанавливаю счетчик хэндлов (ID'ов) равным ID коллекции минус 1.<br />
+2.4. Иду в веб админку нового диспейса, создаю коллекцию, ID совпадает с таковым у старой.<br />
+3. Импортирую коллекцию в новый диспейс.<br />
+<br />
+Коллекций всего штук 60, разделов штук 30. За рабочий день можно справиться, если структура уже готова. Но чувствую, что есть метод куда проще.... почему так чувуствую, да потому, что в базе всё повязано на всём и просто поменять ID раздела/коллекции нельзя. Это сделано либо для чего-то удобного в плане работы со структурой, либо же спустя рукава просто. В последнее мне с трудом верится, вот и думаю, что есть первое, но я его просто не нашел.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79928#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,79928,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80020"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 05, March, 2013 19:47</div><br />
+      <div class="PhorumReadBodyText"> Коллеги, а как в jspui переключалка локалей работает? <br />
+<br />
+Вкорячил в хедер код:<br />
+<br />
+&lt;table  width="95%" align="center"&gt;<br />
+      &lt;tr align="right"&gt;<br />
+        &lt;td align="right"&gt;						<br />
+<br />
+        &lt;form method="get" name="repost" action=""&gt;<br />
+          &lt;input type ="hidden" name ="locale"/&gt;<br />
+        &lt;/form&gt;<br />
+<br />
+        &lt;a class ="langChangeOn"<br />
+                  onclick="javascript:document.repost.locale.value='ru';<br />
+                  document.repost.submit();"&gt;<br />
+                 русский<br />
+        &lt;/a&gt; &amp;nbsp;<br />
+<br />
+        &lt;a class ="langChangeOn"<br />
+                  onclick="javascript:document.repost.locale.value='en';<br />
+                  document.repost.submit();"&gt;<br />
+                 English<br />
+        &lt;/a&gt; &amp;nbsp;<br />
+<br />
+        &lt;/td&gt;<br />
+      &lt;/tr&gt;<br />
+&lt;/table&gt;<br />
+<br />
+Но что-то каменный цветок не выходит. Что точно нужно сделать с конфигом и еще с чем, чтобы всё работало?</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80020#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80020,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80021"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 05, March, 2013 20:29</div><br />
+      <div class="PhorumReadBodyText"> всё оказалось куда проще, оказывается, если внимательно посмотреть на конфиг, найдется соответствующий параметр, но, хотелось бы красоту навести и получить код типа такого:<br />
+<br />
+&lt;table  width="95%" align="center"&gt;<br />
+      &lt;tr align="right"&gt;<br />
+        &lt;td align="right"&gt;						<br />
+        &lt;form method="get" name="repost" action=""&gt;<br />
+          &lt;input type ="hidden" name ="locale"/&gt;<br />
+        &lt;/form&gt;<br />
+        &lt;a class="langChangeOn" onclick="javascript:document.repost.locale.value='ru'; document.repost.submit();"&gt;&lt;img alt="Rus" src="/image/rus.png" width="20" height="15"&gt;&lt;/a&gt;&amp;nbsp;&lt;a class ="langChangeOn" onclick="javascript:document.repost.locale.value='en'; document.repost.submit();"&gt;&lt;img alt="Rus" src="/image/en.png" width="20" height="15"&gt;&lt;/a&gt;<br />
+	&lt;/td&gt;<br />
+      &lt;/tr&gt;<br />
+&lt;/table&gt;<br />
+<br />
+изучение ифа в header-default.jsp просветления не прнесло...</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80021#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80021,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80092"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 08, March, 2013 22:41</div><br />
+      <div class="PhorumReadBodyText"> коллеги, поддерживающие большие архивы, помогите понять следующий момент:<br />
+<br />
+Имею архив с примерно 2500 заглавиями и примерно 3500 файлами. Записи в принципе полноценные, экспортировались из старого арзива и импортировались в новый в основном с пройденым макросом filter-media, но тут я чего-то решил прогнать его заново и уперся в outofmemory.<br />
+<br />
+Полез в dspace.bat и сделал вот какие изменения<br />
+<br />
+Было:<br />
+<br />
+<i>:javaOpts<br />
+REM If JAVA_OPTS specified, use those options<br />
+REM Otherwise, default Java to using 256MB of memory<br />
+if "%JAVA_OPTS%"=="" set JAVA_OPTS=-Xmx256m<br />
+</i><br />
+<br />
+Стало:<br />
+<i>:javaOpts<br />
+REM If JAVA_OPTS specified, use those options<br />
+REM Otherwise, default Java to using 256MB of memory<br />
+::if "%JAVA_OPTS%"=="" set JAVA_OPTS=-Xmx256m<br />
+set JAVA_OPTS=-Xms1536m -Xmx1536m -XX:MaxPermSize=<strong>768m</strong></i><br />
+<br />
+Скрипты после этого все проходят, томкэт радостно выжирает всю отведенную ему память и вроде бы всё хорошо, но хочется узнать о положительном опыте, если у кого-то такой был.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80092#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80092,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80320"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+      <img src="http://irbis.gpntb.ru/file.php?53,file=7704" alt="" align="left" style="border: 0px; padding: 5px;"/>
+ 
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3650">Van</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 16, March, 2013 13:52</div><br />
+      <div class="PhorumReadBodyText"> Для kudin<br />
+сообщение от 24.02.2013<br />
+<br />
+Сам потерял довольно много времени в поисках решения точно такой же проблемы. Увы мне, как всегда, зря — ведь решение лежало на поверхности. В документации по поводу локализации сказано про необходимость иметь файл «Messages_LOCALE.properties» (в нашем случае «Messages_uk.properties»). Файл имелся. НО!!! Как показало (наконец-то) вскрытие ;-) в нем были такие строки:<br />
+news-top.html = news-top.html<br />
+news-side.html = news-side.html<br />
+ вместо требуемых:<br />
+news-top.html = news-top_<strong>uk</strong>.html<br />
+news-side.html = news-side_<strong>uk</strong>.html<br />
+после исправления этих строк и размещения файла  по пути:<br />
+[dspace-source]/dspace/modules/jspui/src/main/resources/Messages_uk.properties<br />
+а также действий необходимых при апгрейде — наступило счастье.<br />
+<br />
+<br />
+<br />
+Редактировано 1 раз. Последний раз 16.03.2013 13:54 пользователем Van.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80320#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80320,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80321"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+      <img src="http://irbis.gpntb.ru/file.php?53,file=7704" alt="" align="left" style="border: 0px; padding: 5px;"/>
+ 
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3650">Van</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 16, March, 2013 13:54</div><br />
+      <div class="PhorumReadBodyText"> Кстати, если кому-нибудь интересно — ниже лежит ДОРАБОТКА предложений от woodyfon (от 25.01.2012) и IdeaFix (от 13.11.2012) по добавлению кириллицы в поиске — получаем совмещенный русско-украинский алфавит со ВСЕМИ символами. Единственное — при вставке кода необходимо  следить чтобы редактор позволял кодирование в UTF-8<br />
+<br />
+ЭТО БОЛЕЕ УДОБНЫЙ (на мой взгляд) ВАРИАНТ:<br />
+<br />
+&lt;br /&gt;<br />
+&lt;br /&gt;<br />
+&lt;%<br />
+        for (char c = '\u0410'; c &lt;= '\u0413'; c++)<br />
+        {<br />
+%&gt;<br />
+                            &lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=&lt;%= c %&gt;"&gt;&lt;%= c %&gt;&lt;/a&gt;<br />
+&lt;%<br />
+        }<br />
+%&gt;<br />
+<br />
+&lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=Ґ"&gt;Ґ&lt;/a&gt;<br />
+<br />
+&lt;%<br />
+        for (char c = '\u0414'; c &lt;= '\u0415'; c++)<br />
+        {<br />
+%&gt;<br />
+                            &lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=&lt;%= c %&gt;"&gt;&lt;%= c %&gt;&lt;/a&gt;<br />
+&lt;%<br />
+        }<br />
+%&gt;<br />
+<br />
+&lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=Є"&gt;Є&lt;/a&gt;<br />
+&lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=Ё"&gt;Ё&lt;/a&gt;<br />
+&lt;%<br />
+        for (char c = '\u0416'; c &lt;= '\u0418'; c++)<br />
+        {<br />
+%&gt;<br />
+                            &lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=&lt;%= c %&gt;"&gt;&lt;%= c %&gt;&lt;/a&gt;<br />
+&lt;%<br />
+        }<br />
+%&gt;<br />
+&lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=І"&gt;І&lt;/a&gt;<br />
+&lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=Ї"&gt;Ї&lt;/a&gt;<br />
+&lt;%<br />
+        for (char c = '\u0419'; c &lt;= '\u042F'; c++)<br />
+        {<br />
+%&gt;<br />
+                            &lt;a href="&lt;%= sharedLink %&gt;&amp;amp;starts_with=&lt;%= c %&gt;"&gt;&lt;%= c %&gt;&lt;/a&gt;<br />
+&lt;%<br />
+        }<br />
+%&gt;<br />
+<br />
+<br />
+<br />
+Редактировано 2 раз. Последний раз 21.03.2013 08:50 пользователем Van.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80321#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80321,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80323"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 17, March, 2013 09:01</div><br />
+      <div class="PhorumReadBodyText"> woodyfon подобную реализацию (добавление украинского индекса алфавитног при поиске) показывал года три назад. Она есть в его варианте мануала. Мой вариант - исключительно копипаста с его русскоязычного варианта, на авторство не претендую :)</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80323#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80323,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80487"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3780">kudin</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 21, March, 2013 20:52</div><br />
+      <div class="PhorumReadBodyText"> ДА!!!!!!!!!!!!<br />
+Большое спасибо, проблема была именно в этом. Действительно, решение почти на поверхности, но всемы крепки задним умом<img class="mod_smileys_img" src="mods/smileys/images/smilie1.gif" alt="smiling smiley" title="smiling smiley"/>. Ещё раз спасибо</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80487#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80487,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80531"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 24, March, 2013 15:17</div><br />
+      <div class="PhorumReadBodyText"> [<a target="_blank"  href="http://ideafix.name/?p=806">ideafix.name</a>]<br />
+<br />
+Перетащил к себе со всеми отсылками на оригинал. Оригинал к сожалению лег :(</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80531#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80531,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80821"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+      <img src="http://irbis.gpntb.ru/file.php?53,file=7704" alt="" align="left" style="border: 0px; padding: 5px;"/>
+ 
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3650">Van</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 01, April, 2013 13:48</div><br />
+      <div class="PhorumReadBodyText"> Пани и панове!<br />
+Пытаюсь включить SOLR в DSpace 3.1 (подсчет статистики по отдельным документам) и ничего у меня не получается - пустые поля и ничего больше. solr-statistic.cfg записан как в мануале указано. Подскажите хотя бы - где копать... <img class="mod_smileys_img" src="mods/smileys/images/smilie11.gif" alt="confused smiley" title="confused smiley"/></div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80821#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80821,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80826"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 01, April, 2013 18:39</div><br />
+      <div class="PhorumReadBodyText"> В конфиге по сути достаточно только адрес поправить и всё. Больше никаких измнений не надо. Статистика заработает (оторбразится) через какое-то время, не мгновенно. А пока, можете последовательно дать команды<br />
+<br />
+dspace stat-general<br />
+dspace stat-monthly<br />
+dspace stat-report-general<br />
+dspace stat-report-monthly <br />
+<br />
+И в администрировании зайти в пункт меню "Статистика"</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80826#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80826,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80827"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+      <img src="http://irbis.gpntb.ru/file.php?53,file=7704" alt="" align="left" style="border: 0px; padding: 5px;"/>
+ 
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3650">Van</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 01, April, 2013 20:08</div><br />
+      <div class="PhorumReadBodyText"> В том то и дело, что эта часть статистики работает и отчетность <img class="mod_smileys_img" src="mods/smileys/images/smilie1.gif" alt="smiling smiley" title="smiling smiley"/> каждый день обновляется... Не работает именно статистика по отдельным документам - сколько раз просмотрели данный документ, сколько скачали, из каких стран, городов... Короче говоря, статистика внизу под описанием ресурса. <img class="mod_smileys_img" src="mods/smileys/images/smilie11.gif" alt="confused smiley" title="confused smiley"/></div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80827#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80827,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80828"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 01, April, 2013 20:20</div><br />
+      <div class="PhorumReadBodyText"> А в логах что? Ну и конфиг можете показать... там же по сути только ссылку до solr приложения поправить надо и само приложение в томкатий докьюмент рут сложить.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80828#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80828,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80839"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+      <img src="http://irbis.gpntb.ru/file.php?53,file=7704" alt="" align="left" style="border: 0px; padding: 5px;"/>
+ 
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3650">Van</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 02, April, 2013 08:00</div><br />
+      <div class="PhorumReadBodyText"> Собственно в solr-statistics.cfg строка такая:  server=http://localhost:8080/solr/statistics <br />
+А больше в конфигах о SOLR практически не упоминается (или я плохо искал)<img class="mod_smileys_img" src="mods/smileys/images/smilie11.gif" alt="confused smiley" title="confused smiley"/> <br />
+А в логах периодически идет сообщение - ERROR org.dspace.statistics.SolrLoggerUsageEventListener @ Internal Server Error<br />
+И в голове ощущение абсолютного вакуума<img class="mod_smileys_img" src="mods/smileys/images/smilie11.gif" alt="confused smiley" title="confused smiley"/><br />
+Папка solr из DSpace\webapps скопирована в Tomcat-папку webapps</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80839#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80839,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80840"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+       
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3461">IdeaFix</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 02, April, 2013 08:35</div><br />
+      <div class="PhorumReadBodyText"> а у Вас правда на 8080 порту висит кот? У меня вот строка так выглядит:<br />
+<br />
+server=http://localhost/solr/statistics <br />
+<br />
+ибо сервер на 80-ом порту.</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80840#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80840,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+      <a name="msg-80842"></a>
+    <div class="PhorumReadMessageBlock">
+        <div class="PhorumStdBlock">
+      <img src="http://irbis.gpntb.ru/file.php?53,file=7704" alt="" align="left" style="border: 0px; padding: 5px;"/>
+ 
+              <div class="PhorumReadBodyHead"><strong>Re: DSpace (установка, настройка)</strong> <span class="PhorumNewFlag"></span></div>
+            <div class="PhorumReadBodyHead">Пользователь: <strong><a href="http://irbis.gpntb.ru/profile.php?53,3650">Van</a></strong> (IP-адрес скрыт)</div>
+      <div class="PhorumReadBodyHead">Дата: 02, April, 2013 09:24</div><br />
+      <div class="PhorumReadBodyText"> Кот находится на порту 8080. Увы...</div><br />
+          </div>
+        <div class="PhorumReadNavBlock" style="text-align: left;">
+      <span class="PhorumNavHeading PhorumHeadingLeft">Опции:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80842#REPLY">Ответить</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,80842,quote=1#REPLY">Цитировать</a>    </div>
+  </div>
+  <div class="PhorumNavBlock" style="text-align: left;">
+      <div style="float: right;">
+      <span class="PhorumNavHeading">Страницы:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=8">&lt;&lt;</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=1">Первая...</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=4">4</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=5">5</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=6">6</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=7">7</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=8">8</a><span class="PhorumNavLink"><strong>9</strong></span><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=10">10</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=11">11</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=12">12</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=13">13</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=14">14</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=36">...Последняя</a><a class="PhorumNavLink" href="http://irbis.gpntb.ru/read.php?53,59259,page=10">&gt;&gt;</a>    </div>
+    <span class="PhorumNavHeading PhorumHeadingLeft">Страница: </span>9 из 36</div>
+
+<br /><br />
+<a name="REPLY"></a><div align="center">
+  <div class="PhorumNavBlock PhorumNarrowBlock" style="text-align: left;">
+    <span class="PhorumNavHeading">Навигация:</span>&nbsp;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/index.php">Список форумов</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/list.php?53">Список тем</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/search.php?53">Искать</a>&bull;<a class="PhorumNavLink" href="http://irbis.gpntb.ru/login.php?53">Войти</a>  </div>
+  <div class="PhorumStdBlock PhorumNarrowBlock">
+              <div class="PhorumFloatingText">Извините, только зарегистрированные пользователи могут писать в этом форуме.</div>
+              </div>
+</div>
+        <div class="PhorumFooterPlug" align="center">
+          This <a href="http://www.phorum.org/">forum</a> powered by <a href="http://www.phorum.org/">Phorum</a>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

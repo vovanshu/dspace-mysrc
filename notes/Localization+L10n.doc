@@ -1,0 +1,530 @@
+Message-ID: <1567410.199.1393417749451.JavaMail.confluence@atlas>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_198_703263614.1393417749451"
+
+------=_Part_198_703263614.1393417749451
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Localization L10n</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Localization L10n</h1>
+    <div class=3D"Section1">
+        <p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1393417749428 {padding: 0px;}
+div.rbtoc1393417749428 ul {list-style: none;margin-left: 0px;}
+div.rbtoc1393417749428 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1393417749428">=20
+<ul class=3D"toc-indentation">=20
+<li><span class=3D"TOCOutline">1</span> <a href=3D"#LocalizationL10n-Introd=
+uction">Introduction</a></li>=20
+<li><span class=3D"TOCOutline">2</span> <a href=3D"#LocalizationL10n-Common=
+areasoflocalization">Common areas of localization</a>=20
+<ul class=3D"toc-indentation">=20
+<li><span class=3D"TOCOutline">2.1</span> <a href=3D"#LocalizationL10n-Enab=
+lingadditionallocales">Enabling additional locales</a></li>=20
+<li><span class=3D"TOCOutline">2.2</span> <a href=3D"#LocalizationL10n-Loca=
+lizationofemailmessages">Localization of email messages</a></li>=20
+<li><span class=3D"TOCOutline">2.3</span> <a href=3D"#LocalizationL10n-Meta=
+datalocalization">Metadata localization</a></li>=20
+</ul> </li>=20
+<li><span class=3D"TOCOutline">3</span> <a href=3D"#LocalizationL10n-XMLUIs=
+pecificlocalization">XMLUI specific localization</a>=20
+<ul class=3D"toc-indentation">=20
+<li><span class=3D"TOCOutline">3.1</span> <a href=3D"#LocalizationL10n-Mess=
+agecatalog">Message catalog</a></li>=20
+<li><span class=3D"TOCOutline">3.2</span> <a href=3D"#LocalizationL10n-Wher=
+etofindthemessagecatalog">Where to find the message catalog</a></li>=20
+<li><span class=3D"TOCOutline">3.3</span> <a href=3D"#LocalizationL10n-Wher=
+etoedit">Where to edit</a></li>=20
+<li><span class=3D"TOCOutline">3.4</span> <a href=3D"#LocalizationL10n-Diff=
+erencewithJSPUI">Difference with JSPUI</a></li>=20
+</ul> </li>=20
+<li><span class=3D"TOCOutline">4</span> <a href=3D"#LocalizationL10n-JSPUIs=
+pecificlocalization">JSPUI specific localization</a>=20
+<ul class=3D"toc-indentation">=20
+<li><span class=3D"TOCOutline">4.1</span> <a href=3D"#LocalizationL10n-Mess=
+agecatalog.1">Message catalog</a></li>=20
+<li><span class=3D"TOCOutline">4.2</span> <a href=3D"#LocalizationL10n-Wher=
+etofindthemessagecatalog.1">Where to find the message catalog</a></li>=20
+<li><span class=3D"TOCOutline">4.3</span> <a href=3D"#LocalizationL10n-Wher=
+etoedit.1">Where to edit</a></li>=20
+<li><span class=3D"TOCOutline">4.4</span> <a href=3D"#LocalizationL10n-Loca=
+lizationofinput-forms.xmlandlicense.default">Localization of input-forms.xm=
+l and license.default</a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>
+<p></p>
+<h2 id=3D"LocalizationL10n-Introduction">Introduction</h2>
+<p>DSpace ships with a number of interface translations. This page provides=
+ information on areas that can be localized by means of configuration or cu=
+stomization. By default, DSpace will look at the user's browser language. I=
+f it has a language file in the user's language, it will render the interfa=
+ce in that language. If not, it will default to English or another default =
+that you have configured.</p>
+<h2 id=3D"LocalizationL10n-Commonareasoflocalization">Common areas of local=
+ization</h2>
+<h3 id=3D"LocalizationL10n-Enablingadditionallocales"><span>Enabling additi=
+onal locales</span></h3>
+<p>Out of the box, DSpace only has English enabled as a supported locale. A=
+dditional locales and the default locale are managed through the following =
+parameters in dspace.cfg:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>dspace.cfg configuration parameters</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">webui.supported.locales
+default.locale</pre>=20
+</div>
+</div>
+<p>You can change default.locale to a different one than English&nbsp;<stro=
+ng>after</strong> adding it to webui.supported.locales.</p>
+<h3 id=3D"LocalizationL10n-Localizationofemailmessages"><span style=3D"line=
+-height: 1.5625;">Localization of email messages</span></h3>
+<p>All email templates used by DSpace can be found in</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Path to the DSpace email templates</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;"> [dspace]/config/emails</pre>=20
+</div>
+</div>
+<p>The contents of the emails can be edited and translated.&nbsp;</p>
+<h3 id=3D"LocalizationL10n-Metadatalocalization">Metadata localization</h3>
+<p>DSpace associates each metadata field value with a language code (though=
+ it may be left empty, e.g. for numeric values).</p>
+<h2 id=3D"LocalizationL10n-XMLUIspecificlocalization">XMLUI specific locali=
+zation</h2>
+<h3 id=3D"LocalizationL10n-Messagecatalog">Message catalog</h3>
+<p>XMLUI supports multiple languages through the use of internationalizatio=
+n catalogues as defined by the&nbsp;<a href=3D"http://cocoon.apache.org/2.1=
+/userdocs/i18nTransformer.html" title=3D"Cocoon Internationalization Transf=
+ormer" class=3D"external-link" rel=3D"nofollow">Cocoon Internationalization=
+ Transformer</a>. Each catalog contains the translation of all user-display=
+ed strings into a particular language or variant. Each catalog is a single =
+xml file whose name is based upon the language it is designated for, thus:<=
+/p>
+<p>messages_<em>language</em>_<em>country</em>_<em>variant</em>.xml</p>
+<p>messages_<em>language</em>_<em>country</em>.xml</p>
+<p>messages_<em>language</em>.xml</p>
+<p>messages.xml</p>
+<p>The interface will automatically determine which file to select based up=
+on the user's browser and system configuration. For example, if the user's =
+browser is set to Australian English then first the system will check if&nb=
+sp;<em>messages_en_au.xml</em>&nbsp;is available. If this translation is no=
+t available it will fall back to&nbsp;<em>messages_en.xml</em>, and finally=
+ if that is not available,&nbsp;<em>messages.xml</em>.</p>
+<h3 id=3D"LocalizationL10n-Wheretofindthemessagecatalog">Where to find the =
+message catalog</h3>
+<p>The latest <strong>English</strong> message catalog is part of the main =
+DSpace distribution and can be found at:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Location of the XMLUI message catalog in the DSpace source tree</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">[dspace-source]/dspace-xmlui/src/main/webapp/i18n/messages.xml<=
+/pre>=20
+</div>
+</div>
+<p>The <strong>different translations</strong> for this message catalog are=
+ being managed separately from the DSpace core project, in order to release=
+ updates for these files more frequently than the DSpace software itself. V=
+isit the&nbsp;<a href=3D"https://github.com/DSpace/dspace-xmlui-lang" class=
+=3D"external-link" rel=3D"nofollow">dspace-xmlui-lang project on Github</a>=
+.</p>
+<h3 id=3D"LocalizationL10n-Wheretoedit">Where to edit</h3>
+<p>In some cases you may want to add additional keys to the message catalog=
+ or changing the particular wording of DSpace concepts. For example, you ma=
+y want to change &quot;Communities&quot; into &quot;Departments&quot;. Thes=
+e kind of changes may get automatically overwritten again when you upgrade =
+to the newest version of DSpace. It is therefore advised to keep such chang=
+es isolated in the following location:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Recommended location for i18n customizations</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">[dspace-source]/dspace/modules/xmlui/src/main/webapp/i18n/</pre=
+>=20
+</div>
+</div>
+<p>After rebuilding DSpace, any messages files placed in this directory wil=
+l be automatically included in the XMLUI web application. Files of the same=
+ name will override any default files. By default, this full directory path=
+ may not exist or may be empty. If it does not exist, you can simply create=
+ it. You can place any number of translation catalogues in this directory. =
+To add additional translations, just add another copy of the&nbsp;<em>messa=
+ges.xml</em>&nbsp;file translated into the specific language and country va=
+riant you need.&nbsp;</p>
+<p>After building and deploying, DSpace will finally read the files from th=
+e following location:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Location where your i18n files are being deployed</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">[dspace]/webapps/xmlui/i18n/messages.xml</pre>=20
+</div>
+</div>
+<p><em>Again, note that you will need to rebuild DSpace for these changes t=
+o take effect in your installed XMLUI web application!</em></p>=20
+<div class=3D"aui-message problem shadowed information-macro">=20
+<p class=3D"title">Do not customize your messages in the webapps directory<=
+/p>=20
+<span class=3D"aui-icon icon-problem">Icon</span>=20
+<div class=3D"message-content">=20
+<p>While it seems like a fast option to change your messages straight in th=
+e deployed dspace directory, these changes are very volatile. If you rebuil=
+d and redeploy DSpace, these changes will get lost.</p>=20
+</div>=20
+</div>=20
+<p>For more information about the&nbsp;<code style=3D"line-height: 1.428571=
+5;">[dspace-source]/dspace/modules/</code>&nbsp;directory, and how it may b=
+e used to &quot;overlay&quot; (or customize) the default XMLUI interface, c=
+lasses and files, please see:&nbsp;<a href=3D"/display/DSDOC4x/Advanced+Cus=
+tomisation">Advanced Customisation</a></p>
+<h3 id=3D"LocalizationL10n-DifferencewithJSPUI">Difference with JSPUI</h3>
+<p>In JSPUI, a wider range of files, including input-forms.xml and default.=
+license can be localized by adding _COUNTRY at the end of the filename. Thi=
+s is currently not supported in XMLUI.</p>
+<h2 id=3D"LocalizationL10n-JSPUIspecificlocalization">JSPUI specific locali=
+zation</h2>
+<div>
+<h3 id=3D"LocalizationL10n-Messagecatalog.1">Message catalog</h3>
+<p>The&nbsp;<a href=3D"http://jakarta.apache.org/taglibs/doc/standard-1.0-d=
+oc/intro.html" title=3D"Java Standard Tag Library v1.0" class=3D"external-l=
+ink" rel=3D"nofollow">Java Standard Tag Library v1.0</a>&nbsp;is used to sp=
+ecify messages in the JSPs like this:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">&lt;H1&gt;&lt;fmt:message key=3D&quot;jsp.search.results.title&=
+quot;/&gt;&lt;/H1&gt;</pre>=20
+</div>
+</div>
+<p>This message can be changed using the&nbsp;<em>config/language-packs/Mes=
+sages.properties</em>&nbsp;file. This must be done at build-time:&nbsp;<em>=
+Messages.properties</em>&nbsp;is placed in the&nbsp;<em>dspace.war</em>&nbs=
+p;Web application file.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">jsp.search.results.title =3D Search Results</pre>=20
+</div>
+</div>
+<p>Phrases may have parameters to be passed in, to make the job of translat=
+ing easier, reduce the number of 'keys' and to allow translators to make th=
+e translated text flow more appropriately for the target language. Here is =
+an example of a phrase in which two parameters are passed in:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">jsp.search.results.text =3D Results {0}-{1} of {2} </pre>=20
+</div>
+</div>
+<p>Multiple&nbsp;<em style=3D"line-height: 1.4285715;">Messages.properties<=
+/em>&nbsp;can be created for different languages. See&nbsp;<a href=3D"http:=
+//java.sun.com/j2se/1.4.2/docs/api/java/util/ResourceBundle.html#getBundle(=
+java.lang.String,%20java.util.Locale,%20java.lang.ClassLoader)" style=3D"li=
+ne-height: 1.4285715;" title=3D"ResourceBundle.getBundle" class=3D"external=
+-link" rel=3D"nofollow">ResourceBundle.getBundle</a>. e.g. you can add Germ=
+an and Canadian French translations:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">Messages_de.properties
+Messages_fr_CA.properties</pre>=20
+</div>
+</div>
+<p>The end user's browser settings determine which language is used by defa=
+ult. The user can change the language by clicking a link in the UI. These l=
+inks are visible if more than one language is configured in DSpace. The Eng=
+lish language file&nbsp;<em>Messages.properties</em>&nbsp;(or the default s=
+erver locale) will be used as a fallback if there's no language bundle for =
+the end user's preferred language. Note that the English file is not called=
+&nbsp;<em>Messages_en.properties. </em>This is because it is always availab=
+le as a fallback, regardless of server configuration.</p>
+<h3 id=3D"LocalizationL10n-Wheretofindthemessagecatalog.1">Where to find th=
+e message catalog</h3>
+<p>The latest&nbsp;<strong>English</strong>&nbsp;message catalog is part of=
+ the main DSpace distribution and can be found at:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Location of the JSPUI message catalog in the DSpace source tree</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">[dspace-source]/dspace-api/src/main/resources/Messages.properti=
+es</pre>=20
+</div>
+</div>
+<p>The&nbsp;<strong>different translations</strong>&nbsp;for this message c=
+atalog are being managed separately from the DSpace core project, in order =
+to release updates for these files more frequently than the DSpace software=
+ itself.&nbsp;Visit the&nbsp;<a href=3D"https://github.com/DSpace/dspace-ap=
+i-lang" class=3D"external-link" rel=3D"nofollow">dspace-api-lang project on=
+ Github</a>.</p>
+<h3 id=3D"LocalizationL10n-Wheretoedit.1">Where to edit</h3>
+<p>In some cases you may want to add additional keys to the message catalog=
+ or changing the particular wording of DSpace concepts. For example, you ma=
+y want to change &quot;Communities&quot; into &quot;Departments&quot;. Thes=
+e kind of changes may get automatically overwritten again when you upgrade =
+to the newest version of DSpace. It is therefore advised to keep such chang=
+es isolated in the following location:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Recommended location for i18n customizations</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Confluence; brush: java; gutter: false" style=3D"font-=
+size:12px;">[dspace-source]/dspace/modules/jspui/src/main/resources/</pre>=
+=20
+</div>
+</div>
+<p>After rebuilding DSpace, any messages files placed in this directory wil=
+l be automatically included in the JSPUI web application. Files of the same=
+ name will override any default files. By default, this full directory path=
+ may not exist or may be empty. If it does not exist, you can simply create=
+ it. You can place any number of translation catalogues in this directory. =
+To add additional translations, just add another copy of the M<em>essages.p=
+roperties</em>&nbsp;file translated into the specific language and country =
+variant you need.&nbsp;</p>
+<p>After building and deploying, DSpace will finally read the files from th=
+e dspace-api-4.0.jar file in your&nbsp;<span style=3D"color: rgb(34,34,34);=
+">[tomcat]\webapps\jspui\WEB-INF\lib directory.</span></p>
+<p><em>Again, note that you will need to rebuild DSpace for these changes t=
+o take effect in your installed JSPUI web application!</em></p>
+<p>For more information about the&nbsp;<code>[dspace-source]/dspace/modules=
+/</code>&nbsp;directory, and how it may be used to &quot;overlay&quot; (or =
+customize) the default XMLUI interface, classes and files, please see:&nbsp=
+;<a href=3D"/display/DSDOC4x/Advanced+Customisation">Advanced Customisation=
+</a></p>
+<h3 id=3D"LocalizationL10n-Localizationofinput-forms.xmlandlicense.default"=
+>Localization of input-forms.xml and license.default</h3>
+<p>The display labels for input-forms.xml and the text in the default submi=
+ssion license (license.default) are currently not managed in the messages c=
+atalogs. To localize these files, you can create versions of these files in=
+ the same folders, appending _COUNTRY at the end of the filename, before th=
+e extension. For example, input-forms_de.xml can be used to translate the s=
+ubmission form labels in German.</p>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_198_703263614.1393417749451--

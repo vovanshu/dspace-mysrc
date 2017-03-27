@@ -1,0 +1,213 @@
+DSPACE INSTALLATION
+
+1. Start the VM and login as root then install the pre-requisite applications (Java, Tomcat, Maven, Ant, PostgreSQL)
+apt-get install sun-java6-jdk
+During the Java package installation, just answer Y (Y is the default action when you hit Enter as with other application installation except if the application cannot be authenticated where N is the default action), OK (press the Tab key) and Yes (left arrow key) when prompted.
+apt-get install tomcat6
+apt-get install maven2 (Ant is bundled with this package. No need to install separately)
+apt-get install postgresql
+
+or if you have a very fast connection, you can do a single liner
+apt-get install sun-java6-jdk tomcat6 maven2 postgresql
+
+2. Just to make sure you won’t get a Java runtime misconfiguration, you do this
+update-alternatives –config java
+
+Select the selection number that says:
+/usr/lib/jvm/java-6-sun/jre/bin/java 63 manual mode (in my case, I selected option 2 see screenshot)
+
+3. Download the latest Dspace package. For some unknown reason, I am not able to access sourceforge.net so I downloaded the package here.
+Before downloading, change directory to /usr/src
+cd /usr/src/
+Then download the package
+wget -c http://www.sfr-fresh.com/unix/www/dspace-1.7.0-release.tar.gz
+
+4. Unpack the package.
+ls dspace-1.7.0-release.tar.gz (just to verify the package is in the directory)
+tar zxvf dspace-1.7.0-release.tar.gz
+
+5. Create Linux user account for Dspace
+useradd -m dspace (-m option creates user home directory)
+
+6. Change ownership of newly unpacked directory
+chown -R dspace:adm dspace-1.7.0-release
+
+7. The next step involves Postgresql. It requires you to change the file system permission setting to trust localhost connections you do this by editing the pg_hba.conf file.
+nano /etc/postgresql/8.4/main/pg_hba.conf
+
+When you open the file, scroll down to the last portion where you will see the following entries
+
+# Database administrative login by UNIX sockets
+#local all postgres ident <<< comment this line and add line below
+local all postgres trust
+
+# TYPE DATABASE USER CIDR-ADDRESS METHOD
+# “local” is for Unix domain socket connections only
+#local all all ident <<< comment this line and add line below
+local all all trust
+
+8. Restart Postgresql to use the modified configuration
+/etc/init.d/postgresql restart
+
+9. Create Postgresql user account for DSpace
+To verify Postgresql is running, type psql -U postgres
+You should be able to login to Postgresql. Type \q to quit
+Proceed by typing this command
+createuser -U postgres -d -A -P dspace ; createdb -U dspace -E UNICODE dspace
+
+key-in dspace when prompted for password and when asked to confirm password
+key-in y when prompted to take action on role
+
+10. Change directory to the initial configuration files repository
+cd dspace-1.7.0-release/dspace/config/
+
+10.1 Edit dspace.cfg particularly the following parameters:
+
+# DSpace host name
+dspace.hostname = dspace.your-domain-name.edu
+
+# DSpace base host URL
+dspace.baseUrl = http://dspace.your-domain.edu:8080 or http://ip_address:8080
+
+NOTE
+– It is extremely important that you enter the correct information otherwise Dspace will not work
+– If hostname is used, then an entry on your DNS server is a must. In BIND for example
+dspace.xxxxxx.edu. IN A x.x.x.x
+or in the Windows host, add an entry in the Windows\System32\Drivers\etc\hosts file the should point to the DSpace VM.
+
+# Name of the site
+dspace.name — Dspace for AIIAS Hardinge Library
+
+# Database name (“oracle”, or “postgres”)
+#db.name = ${default.db.name} <<< comment this entry
+db.name = postgres <<< uncomment this
+#db.name = oracle
+
+# URL for connecting to database
+#db.url = ${default.db.url} <<< comment this
+db.url = jdbc:postgresql://localhost:5432/dspace <<< uncomment this
+
+# JDBC Driver
+#db.driver = ${default.db.driver} <<< comment this
+db.driver = org.postgresql.Driver <<< uncomment this
+
+# Database username and password
+#db.username = ${default.db.username} \__ comment these
+#db.password = ${default.db.password} /
+db.username = dspace \__ uncomment these
+db.password = dspace /
+
+# SMTP mail server
+mail.server = smtp.your-domain.edu
+
+# From address for mail
+mail.from.address = dspace-noreply@your-domain.edu
+
+# Currently limited to one recipient!
+feedback.recipient = dspace-help@your-domain.edu
+
+# General site administration (Webmaster) e-mail
+mail.admin = dspace-help@your-domain.edu
+
+11. Change directory to /var then create dspace directory and chown directory ownership
+cd /var
+mkdir dspace
+chown dspace dspace
+
+12. Build the Maven package
+cd /usr/src/dspace-1.7.0-release/dspace
+mvn package
+
+it will start downloading a lot of jar and pom files… until you see something like this:
+
+[INFO] Copying 1386 files to /usr/src/dspace-1.7.0-release/dspace/target/dspace-1.7.0-build.dir
+[INFO]
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] ------------------------------------------------------------------------
+[INFO] DSpace Addon Modules .................................. SUCCESS [8:46.193s]
+[INFO] DSpace XML-UI (Manakin) :: Web Application ............ SUCCESS [1:02:46.078s]
+[INFO] DSpace LNI :: Web Application ......................... SUCCESS [2:39.578s]
+[INFO] DSpace OAI :: Web Application ......................... SUCCESS [43.201s]
+[INFO] DSpace JSP-UI :: Web Application ...................... SUCCESS [3:26.257s]
+[INFO] DSpace SWORD :: Web Application ....................... SUCCESS [1:22.040s]
+[INFO] DSpace SOLR :: Web Application ........................ SUCCESS [17:28.865s]
+[INFO] DSpace Assembly and Configuration ..................... SUCCESS [5:06.675s]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 102 minutes 23 seconds
+[INFO] Finished at: Wed Mar 09 06:57:19 PST 2011
+[INFO] Final Memory: 40M/92M
+[INFO] ------------------------------------------------------------------------
+
+13. Change directory to Dspace source directory and run ant
+cd /usr/src/dspace-1.7.0-release/dspace/target/dspace-1.7.0-build.dir
+ant fresh_install
+
+this will start a process, connecting database and updating a lot of files. Until you will see something like this:
+
+     [echo]
+     [echo] ====================================================================
+     [echo]  The DSpace code has been installed, and the database initialized.
+     [echo]
+     [echo]  To complete installation, you should do the following:
+     [echo]
+     [echo]  * Setup your Web servlet container (e.g. Tomcat) to look for your
+     [echo]    DSpace web applications in: /dspace/webapps/
+     [echo]
+     [echo]    OR, copy any web applications from /dspace/webapps/ to
+     [echo]    the appropriate place for your servlet container.
+     [echo]    (e.g. '$CATALINA_HOME/webapps' for Tomcat)
+     [echo]
+     [echo]  * Make an initial administrator account (an e-person) in DSpace:
+     [echo]
+     [echo]    /dspace/bin/dspace create-administrator
+     [echo]
+     [echo]  * Start up your servlet container (Tomcat etc.)
+     [echo]
+     [echo]  You should then be able to access your DSpace's 'home page':
+     [echo]
+     [echo]    http://localhost:8080/xmlui
+     [echo]
+     [echo]  You should also be able to access the administrator UI:
+     [echo]
+     [echo]    http://localhost:8080/xmlui/dspace-admin
+     [echo] ====================================================================
+     [echo]
+
+BUILD SUCCESSFUL
+Total time: 17 minutes 33 seconds
+
+14. For your own sanity’s sake, instead of tweaking Tomcat as suggested by the installer, copy instead the DSpace webapps directory content to the Tomcat webapps directory.
+cp -R /dspace/webapps/* /var/lib/tomcat6/webapps/
+
+15. Create the initial administrator account.
+cd bin
+chmod 775 dspace
+./dspace create-administrator
+
+Creating an initial administrator account
+E-mail address: xxxxxxx@xxxxx.edu
+First name: xxxxxxx
+Last name: xxxxxxx
+WARNING: Password will appear on-screen.
+Password: your_password
+Again to confirm: your_password
+Is the above data correct? (y or n): y
+Administrator account created
+
+16. Check if Tomcat is running. Launch your favorite web browser and go to cp
+http://dspace_server_address:8080
+
+A webpage should say something like IT WORKS
+
+17. Access your Dspace home page at
+http://dspace_server_address:8080/jspui
+
+or access the administrator at
+http://dspace_server_address:8080/jspui/dspace-admin
+
+CONGRATULATIONS! You have successfully installed Dspace…
